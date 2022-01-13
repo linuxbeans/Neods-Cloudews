@@ -1,0 +1,282 @@
+<%-include('blocks/header');%>
+<%-include('blocks/menu');%>
+
+
+<!-- <header id="home">
+            <div class="small-container">
+                <form class="main-font-family text-center">
+                    <input type="search">
+                    <i class="fas fa-search"></i>
+                    <input type="submit" value="Search">
+                </form>
+                <div class="row">
+                    <div class="col-lg-4 col-12 lobster-font-family d-flex align-items-center">
+                        <h2>It is a long established fact that a reader will be distracted by the readablen</h2>
+                        <button><a href="#">About hotel</a></button>
+                    </div>
+                </div>
+                <div class="h-slider roboto-font-family welcome d-flex align-items-center justify-content-center">
+                    <h1 class="text-capitalize">Welcome to <br><span>five hotel</span></h1>
+                    <div id="headerslider" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item carousel-three active"></div>
+                        <div class="carousel-item carousel-two"></div>
+                        <div class="carousel-item carousel-one"></div>
+                      </div>
+                      <a class="carousel-control-prev" href="#headerslider" role="button" data-slide="prev">
+                        <i class="fas fa-angle-double-left"></i>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#headerslider" role="button" data-slide="next">
+                        <i class="fas fa-angle-double-right"></i>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                </div>
+            </div>
+            <div class="st-rec"></div>
+            <div class="rd-rec"></div>
+           
+        </header> -->
+ <style>
+     /* gallery */
+
+.gallery {
+    padding: 70px 0;
+    background-image: url('../imgs/pic9.jpg');
+    background-size: cover;
+}
+
+.gallery h2 {
+    margin-bottom: 50px
+}
+
+.gallery .col-lg-4 > div{
+    height: 300px;
+    width: 100%;
+    margin-bottom: 30px;
+    position: relative
+}
+
+.gallery .col-lg-4 > div h4 {
+    position: relative;
+    top: 40px;
+    z-index: 3;
+    text-align: center;
+}
+
+.gallery .col-lg-4 > div.active {
+    height: 630px
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery .pic-one,
+.gallery .pic-two,
+.gallery .pic-three,
+.gallery .pic-four,
+.gallery .pic-five {
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery .pic-one {
+    background-image: url('../imgs/pic6.jpg')
+}
+
+.gallery .pic-two {
+    background-image: url('../imgs/pic3.jpg')
+}
+.gallery .pic-three {
+    background-image: url('../imgs/pic4.jpg')
+}
+.gallery .pic-four {
+    background-image: url('../imgs/pic2.jpg')
+}
+.gallery .pic-five {
+    background-image: url('../imgs/pic5.jpg')
+}
+
+/* slider */
+
+.slider {
+    height: 450px;
+    padding: 50px 0;
+    margin-bottom: 30px
+}
+
+.slider h2 {
+    font-size: 45px;
+}
+    
+.slider .carousel-indicators li {
+    background-color: #ffcc00;
+    padding: 6px;
+    border-radius: 0;
+    opacity: 1;
+}
+
+.slider .carousel-indicators li.active {
+    background-color: #000;
+}
+
+.slider .carousel-inner {
+    height: 400px
+}
+
+.slider .carousel-inner .carousel-item {
+    height: 100%
+}
+
+.slider .carousel-inner .carousel-item h5, .slider .carousel-inner .carousel-item p {
+    color: black;
+}
+
+.slider .carousel-inner .carousel-item h5 {
+    color: #ffcc00;
+    font-size: 25px
+}
+
+.slider .carousel-inner .carousel-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 30px
+}
+
+.carousel-caption {
+    box-shadow: 5px 5px 10px #e0dddd, -5px -5px 10px #e0dddd;
+}
+
+.carousel-indicators {
+    bottom: -40px;
+}
+
+/* contact */
+
+.contact {
+    padding: 30px 0 70px;
+    position: relative;
+    margin-top: 80px;
+}
+
+.contact .container > h2 {
+    font-size: 45px;
+    margin-bottom: 90px;
+}
+
+.contact .col-6 h2 {
+    font-size: 55px;
+    width: 70%;
+    float: right
+}
+
+.contact .contact-form {
+    background-color: rgba(212,5,1,.8);
+    padding: 52px;
+    border: 1px solid #000;
+    position: relative;
+    left: 111px;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+}
+
+.contact form textarea {
+    resize: none;
+    height: 100px;
+}
+
+.contact form input[type="submit"] {
+    width: 120px;
+    height: 40px;
+    background-color: #ffcc33;
+    border: none;
+    margin-bottom: 0;
+}
+
+.contact > div:last-of-type {
+    z-index: -1;
+    position: absolute;
+    height: 570px;
+    width: 680px;
+    left: 0;
+    bottom: 0px;
+    /* background-image: url(../imgs/pic1.jpg); */
+    background-size: cover;
+}
+
+.contact .row > .col-6:last-of-type {
+    position: relative
+}
+
+.contact h2 + img {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    right: -120px;
+    z-index: -3;
+}
+ </style>       
+<div class="contact main-font-family text-center">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-10">
+                <div class="contact-form">
+                    <form action="/Client">
+                        <!-- <input type="text" placeholder="Name"> -->
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <!-- <textarea placeholder="Message"></textarea> -->
+                        <input type="submit" value="submit">
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div></div>
+</div>
+<!-- <div class="about lobster-font-family">
+            <div class="container">
+                <h2 class="text-center text-capitalize">About our hotel</h2>
+                <img src="imgs/shape.png">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <h4>A best place to enjoy your life</h4>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered </p>
+                        <button><a href="#">Read more</a></button>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="img"></div>
+                    </div>
+                </div>
+                <h2 class="text-capitalize" id="room">rooms & suits</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                        <div class="img"></div>
+                    </div>
+                    <div class="col-lg-8 col-12">
+                        <div class="block">
+                            <div>
+                                <img src="imgs/shape.png">
+                                <strong>$405</strong>
+                                <h5>luxury rooms</h5>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</p>
+                                <button><a href="#" class="text-capitalize">Read more</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+<%-include('blocks/footer')%>

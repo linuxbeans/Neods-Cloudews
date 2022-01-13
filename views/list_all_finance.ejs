@@ -1,0 +1,1388 @@
+<%-include('blocks/header');%>
+<div class="container-fluid">
+  <div class="row flex-nowrap">
+    <div class="col-2 col-xs-3 col-md-3 col-xl-2 px-sm-2 px-0 bg-light">
+      <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+
+
+      </div>
+    </div>
+    <div class="col py-3">
+      <h3 class="text-center">Finance List</h3>
+
+      <div class="tabs">
+        <ul id="tabs-nav">
+          <li><a href="#tab1">Company Details</a></li>
+
+
+        </ul> <!-- END tabs-nav -->
+        <div id="tabs-content">
+          <!-- <div id="tab1" class="tab-content">
+          </div> -->
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModallogpay" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <h5 class="modal-title text-center mb-3">Log Vendor Payment Request</h5>
+      <div class="modal-body">
+        <form class="row g-3 ">
+
+          <div class="mb-3 row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Date</label>
+            <div class="col-sm-5">
+              <input type="date" class="form-control" value="">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Amount Us..</label>
+            <div class="col-sm-5">
+              <input type="text" class="form-control" id="inputPassword">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Vendor</label>
+            <div class="col-sm-5">
+              <input type="text" class="form-control">
+            </div>
+            <div class="col-sm-5">
+              <button class="btn btn-secondary">Select</button>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Request Des.</label>
+            <div class="col-sm-5">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-3 col-form-label">Attach Request Des.</label>
+            <div class="col-sm-2">
+              <button class="btn btn-secondary">Attach</button>
+            </div>
+            <div class="col-sm-2">
+              <button class="btn btn-secondary">View</button>
+            </div>
+            <div class="col-sm-3">
+              <button class="btn btn-secondary">Login Request</button>
+            </div>
+            <div class="col-sm-2">
+              <button class="btn btn-secondary">Cancel</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModallogpayrequesthistory" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <h5 class="modal-title text-center mb-3">Vendor Debit Note Summary</h5>
+      <div class="modal-body">
+        <form class="row g-3 ">
+
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-1 col-form-label">For</label>
+            <div class="col-sm-3">
+              <input type="text" class="form-control">
+            </div>
+            <div class="col-sm-2">
+              <button class="btn btn-secondary">Select</button>
+            </div>
+            <div class="col-sm-2">
+              <button class="btn btn-secondary">Show All</button>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-3 col-form-label">Show Only Paid:</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control">
+              <!-- <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select> -->
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-3 col-form-label">Attach Request Des.</label>
+            <div class="col-sm-3">
+              <button class="btn btn-secondary">Log New DN</button>
+            </div>
+            <div class="col-sm-3">
+              <button class="btn btn-secondary">View DN Details</button>
+            </div>
+            <div class="col-sm-3">
+              <button class="btn btn-secondary">Remove DN</button>
+            </div>
+          </div>
+          <div class="table-responsive"> 
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Payment Request Id</th>
+                <th scope="col">Amount Requested</th>
+                <th scope="col">Paid</th>
+                <th scope="col">Desc.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>Otto</td>
+                <td>Otto</td>
+              </tr>
+              <tr>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>Jacob</td>
+                <td>Jacob</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-4 col-form-label">Associated Client Charges</label>
+            <div class="col-sm-3">
+              <button class="btn btn-secondary">Link Charge</button>
+            </div>
+            <div class="col-sm-3">
+              <button class="btn btn-secondary">Delink Charge</button>
+            </div>
+          </div>
+          <div class="table-responsive"> 
+           <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Matter Docket</th>
+                <th scope="col">Charge Id</th>
+                <th scope="col">Amount Charged</th>
+                <th scope="col">Collected</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>Otto</td>
+              </tr>
+              <tr>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>Jacob</td>
+              </tr>
+            </tbody>
+            </table>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalpaymentsearch" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Client Payment History</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <h4 class="text-center">Client Payment History</h4>
+      <form class="row g-3 mt-4">
+        <div class="row mb-3">
+          <div class="col-sm-1">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">CLient: </label>
+          </div>
+          <div class="col-sm-4">
+            <input type="email" class="form-control" id="inputEmail3">
+          </div>
+          <div class="col-sm-4">
+            <button type="button" class="btn btn-secondary">Select</button>
+          </div>
+        </div>
+      </form>
+
+      <h4>Payments</h4>
+      <div class="table-responsive"> 
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Payment Date</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Payment Id</th>
+            <th scope="col">Payment Record Id</th>
+            <th scope="col">Unused Balance</th>
+            <th scope="col">Logged By</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+          </tr>
+          <tr>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="row mb-3">
+        <div class="col-sm-3">
+          <button type="button" class="btn btn-secondary .mr-1">View Record</button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" class="btn btn-secondary .mr-1">View Record</button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" class="btn btn-secondary .ml-1">Credit Open Charges</button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" class="btn btn-secondary .ml-1">Credit Open Charges</button>
+        </div>
+      </div>
+
+      <form class="row g-3 mt-2">
+        <div class="row mb-2">
+          <label for="inputEmail3" class="col-sm-5 col-form-label">Credited Charges For Payment Record Id: </label>
+          <div class="col-sm-4">
+            <input type="email" class="form-control" id="inputEmail3">
+          </div>
+        </div>
+      </form>
+      <div class="table-responsive"> 
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Docket</th>
+            <th scope="col">Charge Desc</th>
+            <th scope="col">Charge Amount</th>
+            <th scope="col">Credited Amount</th>
+            <th scope="col">Balance</th>
+            <th scope="col">Credited By</th>
+            <th scope="col">Vat</th>
+            <th scope="col">Dn Id</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+            <td>Mark</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="row mb-3">
+        <div class="col-sm-3">
+          <button type="button" class="btn btn-secondary .mr-1">Remove Credit</button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" class="btn btn-secondary .mr-1">Close</button>
+        </div>
+      </div>
+      <!-- <div class="modal-body">
+              <form class="row g-3 ">
+                  <div class="col-md-5 ">
+                      <label for="inputEmail4" class="form-label">Company Name Field</label>
+                      <input type="text" class="form-control" id="inputEmail4">
+                  </div>
+                  <div class="col-md-3 ">
+                      <label for="inputPassword4" class="form-label">ABV</label>
+                      <input type="text" class="form-control" id="inputPassword4">
+                  </div>
+                  <div class="col-4 ">
+                      <label for="inputAddress" class="form-label">Company Name Field </label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                  </div>
+                  <div class="col-4 ">
+                      <label for="inputAddress2" class="form-label">Contact Name Field</label>
+                      <input type="text" class="form-control" id="inputAddress2"
+                          placeholder="Apartment, studio, or floor">
+                  </div>
+                  <div class="col-md-6 ">
+                      <label for="inputCity" class="form-label">Phone/Fax Field</label>
+                      <input type="text" class="form-control" id="inputCity">
+                  </div>
+                  <div class="col-md-6 ">
+                      <label for="inputCity" class="form-label">Address Field</label>
+                      <input type="text" class="form-control" id="inputCity">
+                  </div>
+                  <div class="col-md-6">
+                      <label for="inputCity" class="form-label">Countries Filed</label>
+                      <input type="text" class="form-control" id="inputCity">
+                  </div>
+                
+              </form>
+          </div> -->
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalofficebilling" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <h4 class="text-center">Summary of Charges for All Client</h4>
+      
+      
+      <form class="row g-3 mt-4">
+        <div class="row mb-3">
+          <div class="col-sm-1">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">CLient: </label>
+          </div>
+          <div class="col-sm-4">
+            <input type="email" class="form-control" id="inputEmail3">
+          </div>
+          <div class="col-sm-4">
+            <button type="button" class="btn btn-secondary">Select</button>
+          </div>
+        </div>
+      </form>
+      <h5 >Propats Charge Summary By Client</h5>
+      <div class="table-responsive"> 
+      <table class="table mt-2">
+        <thead>
+          <tr>
+            <th scope="col">Client</th>
+            <th scope="col">Pending F</th>
+            <th scope="col">Released F</th>
+            <th scope="col">Billed f&D</th>
+            <th scope="col">Owed F</th>
+            <th scope="col">Disb</th>
+            <th scope="col">Owed Disb</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <h5 >Collected For:</h5>
+      <div class="table-responsive"> 
+      <table class="table mt-2">
+        <thead>
+          <tr>
+            <th scope="col">Months</th>
+            <th scope="col">Prof. Fees</th>
+            <th scope="col">Disb.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>      
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>     
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="col-sm-2">
+        <button type="button" class="btn btn-secondary">Open Charge</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalssum" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <h4 class="text-center">Summary of Charges Per Client & Per Matter</h4>
+      
+      
+      <form class="row g-3 mt-4">
+        <div class="row mb-3">
+          <div class="col-sm-1">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">CLient: </label>
+          </div>
+          <div class="col-sm-4">
+            <input type="email" class="form-control" id="inputEmail3">
+          </div>
+          <div class="col-sm-4">
+            <button type="button" class="btn btn-secondary">Select</button>
+          </div>
+        </div>
+      </form>
+      <h3 >All Charges For Client</h3>
+      <form class="row g-3 mt-4">
+        <div class="row mb-3">
+         <div class="col-sm-4">
+            <button type="button" class="btn btn-secondary">Generate New DN</button>
+          </div>
+        </div>
+      </form>
+      <div class="table-responsive"> 
+      <table class="table mt-3">
+        <thead>
+          <tr>
+            <th scope="col">Docket</th>
+            <th scope="col">Pending</th>
+            <th scope="col">Released </th>
+            <th scope="col">Billed</th>
+            <th scope="col">Collected</th>
+            <th scope="col">Credited</th>
+            <th scope="col">Disb.</th>
+            <th scope="col">Billed Disb.</th>
+            <th scope="col">Collected Dl</th>
+            <th scope="col">Credited Disb</th>
+            <th scope="col">Collectable</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <form>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" >
+          </div>
+          <div class="col">
+            <input type="text" class="form-control">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control">
+          </div>
+        </div>
+      </form>
+
+      <form class="row g-3 mt-4">
+        <div class="row mb-3">
+          <div class="col-sm-2">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Charge For</label>
+          </div>
+          <div class="col-sm-2">
+            <input type="email" class="form-control" id="inputEmail3">
+          </div>
+        </div>
+      </form>
+      <div class="table-responsive"> 
+      <table class="table mt-3">
+        <thead>
+          <tr>
+            <th scope="col">Task Desc.</th>
+            <th scope="col">Charge Desc.</th>
+            <th scope="col">Currency </th>
+            <th scope="col">Amount </th>
+            <th scope="col">Disb.</th>
+            <th scope="col">Billed Date</th>
+            <th scope="col">Collected</th>
+            <th scope="col">Credited</th>
+            <th scope="col">DN</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td> 
+            <td>Mark</td> 
+            <td>Mark</td>       
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td> 
+            <td>Mark</td> 
+            <td>Mark</td>    
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="col-sm-4">
+        <button type="button" class="btn btn-secondary">Open Charge</button>
+        <button type="button" class="btn btn-secondary">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalschargehistory" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <h4 class="text-center">Client Charge History</h4>
+      
+      <form class="row g-3 mt-4">
+        <div class="row mb-3">
+          <div class="col-sm-1">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">CLient: </label>
+          </div>
+          <div class="col-sm-4">
+            <input type="email" class="form-control" id="inputEmail3">
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-secondary">Select</button>
+          </div>
+          <div class="col-sm-3">
+            <button type="button" class="btn btn-secondary">Show All</button>
+          </div>
+        </div>
+      </form>
+      <h5 >Charges:</h5>
+      <div class="table-responsive"> 
+      <table class="table mt-2">
+        <thead>
+          <tr>
+            <th scope="col">C.I.D</th>
+            <th scope="col">C.E Date</th>
+            <th scope="col">Billed Date</th>
+            <th scope="col">Docket</th>
+            <th scope="col">Charge Desc.</th>
+            <th scope="col">C.Amnt.</th>
+            <th scope="col">Balance</th>
+            <th scope="col">Closed Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="col-sm-2">
+        <button type="button" class="btn btn-secondary">Credit Charge</button>
+      </div>
+      <h5 >Credited Records($)</h5>
+      <div class="table-responsive"> 
+      <table class="table mt-2">
+        <thead>
+          <tr>
+            <th scope="col">Credit Date</th>
+            <th scope="col">Credit Amount</th>
+            <th scope="col">Payment Id</th>
+            <th scope="col">Payment Record Id</th>
+            <th scope="col">Logged By</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>      
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>     
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="col-sm-5">
+        <button type="button" class="btn btn-secondary">Remove Credit</button>
+        <button type="button" class="btn btn-secondary">View Record</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModaldebitncfe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <h4 class="text-center">Debit Notes</h4>
+      <form class="row g-3 mt-4">
+        <div class="row mb-3">
+          <div class="col-sm-1">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">CLient: </label>
+          </div>
+          <div class="col-sm-4">
+            <input type="email" class="form-control" id="inputEmail3">
+          </div>
+          <div class="col-sm-2">
+            <button type="button" class="btn btn-secondary">Select</button>
+          </div>
+          <div class="col-sm-2">
+            <button type="button" class="btn btn-secondary">Show All</button>
+          </div>
+        </div>
+      </form>
+
+      <h4 class="text-center mt-4">Issued Debit Notes</h4>
+      <form class="row g-3 mt-4">
+        <div class="row mb-3">
+          <!-- <div class="col-sm-1">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">CLient: </label>
+          </div> -->
+          <div class="col-sm-4">
+            <input type="email" class="form-control" id="inputEmail3">
+          </div>
+          <div class="col-sm-4">
+            <input type="email" class="form-control" id="inputEmail3">
+          </div>
+          <!-- <div class="col-sm-2">
+            <button type="button" class="btn btn-secondary">Select</button>
+          </div>
+          <div class="col-sm-2">
+            <button type="button" class="btn btn-secondary">Show All</button>
+          </div> -->
+        </div>
+      </form>
+      <div class="table-responsive"> 
+      <table class="table mt-3">
+        <thead>
+          <tr>
+            <th scope="col">D.N ID</th>
+            <th scope="col">Issue Date</th>
+            <th scope="col">Total Billed</th>
+            <th scope="col">Sent Date</th>
+            <th scope="col">Currency</th>
+            <th scope="col">Closed Date</th>
+            <th scope="col">Status</th>
+            <th scope="col">Collected</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+          </tr>
+          <tr>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <h4 class="text-center mt-4">Associated Debit Note Charges</h4>
+
+      <div class="table-responsive"> 
+      <table class="table mt-3">
+        <thead>
+          <tr>
+            <th scope="col">Matter Docket</th>
+            <th scope="col">Id</th>
+            <th scope="col">Currency</th>
+            <th scope="col">Dis b.</th>
+            <th scope="col">Charge Desc</th>
+            <th scope="col">charged</th>
+            <th scope="col">Billed</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+            <td>Mark</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="col-sm-2">
+        <button type="button" class="btn btn-secondary">Clear</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModallogpayment" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <h4 class="text-center">Log Received Payment</h4>
+      <form class="row g-3 mt-4">
+        <div class="row mb-3">
+          <div class="col-sm-1">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Client: </label>
+          </div>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" id="inputEmail3">
+          </div>
+          <div class="col-sm-2">
+            <button type="button" class="btn btn-secondary">Select</button>
+          </div>
+          <div class="col-sm-1">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Date</label>
+          </div>
+          <div class="col-sm-4">
+            <input type="date" class="form-control" id="inputEmail3">
+          </div>
+          <div class="col-sm-1">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Amount (USD)</label>
+          </div>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" id="inputEmail3">
+          </div>
+          <div class="col-sm-1">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Payment Type/Id</label>
+          </div>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" id="inputEmail3">
+          </div>
+          <div class="col-sm-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Attach Payment Receipt/DOC</label>
+          </div>
+          <div class="col-sm-4">
+            <button class="btn btn-primary">Attach</button>
+            <button class="btn btn-primary">View</button>
+
+          </div>
+          <div class="col-sm-2">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Payment Record Id</label>
+          </div>
+          <div class="col-sm-2">
+            <input type="text" class="form-control" id="inputEmail3">
+          </div>
+        </div>
+        <div class="row mb-3 btn-group-toggle">
+          <div class="col-sm-5">
+            <button class="btn btn-primary">Log Payment</button>
+            <button class="btn btn-primary">Cancel</button>
+
+          </div>
+        </div>
+      </form>
+
+      <h4>Open Charges</h4>
+      <div class="table-responsive"> 
+      <table class="table mt-2">
+        <thead>
+          <tr>
+            <th scope="col">Docket</th>
+            <th scope="col">Charge Desc</th>
+            <th scope="col">Charge Amount</th>
+            <th scope="col">Balance</th>
+            <th scope="col">Vat</th>
+            <th scope="col">Billed Date</th>
+            <th scope="col">Dn_ID</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+          </tr>
+          <tr>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <form class="form-inline">
+        <div class="col-sm-4">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">Credit Amount</span>
+            </div>
+            <input type="text" class="form-control">
+            <input type="text" class="form-control">
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">Sub Total</span>
+            </div>
+            <div class="col-sm-3 mr-2">
+              <input type="text" class="form-control">
+            </div>
+            <div class="col-sm-3 mr-2">
+              <button class="btn btn-primary">Credit</button>
+            </div>
+            <div class="col-sm-4 ">
+              <button class="btn btn-primary">Go to DN</button>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <h4 class="mt-5">Credit Charges</h4>
+      <div class="table-responsive"> 
+      <table class="table mt-2">
+        <thead>
+          <tr>
+            <th scope="col">Docket</th>
+            <th scope="col">Charge Desc</th>
+            <th scope="col">Charge Amount</th>
+            <th scope="col">Credited Amount</th>
+            <th scope="col">Balance</th>
+            <th scope="col">Vat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+          </tr>
+          <tr>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalchargehistory" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <h4 class="text-center">Client Charge History</h4>
+      <form class="row g-3 mt-4">
+        <div class="row mb-3">
+          <div class="col-sm-1">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Client: </label>
+          </div>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" id="inputEmail3">
+          </div>
+          <div class="col-sm-2">
+            <button type="button" class="btn btn-secondary">Select</button>
+          </div>
+          <div class="col-sm-2">
+            <button type="button" class="btn btn-secondary">Show All</button>
+          </div>
+
+      </form>
+
+      <h4 class="mt-5">Charges</h4>
+      <div class="table-responsive"> 
+      <table class="table mt-2">
+        <thead>
+          <tr>
+            <th scope="col">C.I.D</th>
+            <th scope="col">C.E.Date</th>
+            <th scope="col">Billed Date</th>
+            <th scope="col">Docket</th>
+            <th scope="col">Charge Desc.</th>
+            <th scope="col">C.Amnt</th>
+            <th scope="col">Balance</th>
+            <th scope="col">Closed Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Credit Charge</button>
+      </div> 
+      <h4 class="mt-5">Credited Records(s)</h4>
+      <div class="table-responsive"> 
+      <table class="table mt-2">
+        <thead>
+          <tr>
+            <th scope="col">Credit Date</th>
+            <th scope="col">Credit Amount</th>
+            <th scope="col">Payment Id</th>
+            <th scope="col">Payment Record ID</th>
+            <th scope="col">Logged By</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+          </tr>
+          <tr>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Remove Credit</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">View Record</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalcreditcharge" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <h4 class="text-center">Credit Charges</h4>
+      <form class="row g-3 mt-4">
+        <div class="row mb-3">
+          <div class="col-sm-1">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Client: </label>
+          </div>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" id="inputEmail3">
+          </div>
+          <div class="col-sm-2">
+            <button type="button" class="btn btn-secondary">Select</button>
+          </div>
+
+
+      </form>
+
+      <h4 class="mt-5">Available Payments</h4>
+      <div class="table-responsive"> 
+      <table class="table mt-2">
+        <thead>
+          <tr>
+            <th scope="col">Payment Date</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Payment Id</th>
+            <th scope="col">Payment Record Id</th>
+            <th scope="col">Unused Balance</th>
+            <th scope="col">Logged By</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+          </tr>
+          <tr>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <form class="form-inline">
+        <div class="col-sm-4">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">Credit Amount</span>
+            </div>
+            <input type="text" class="form-control">
+            <input type="text" class="form-control">
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="">Sub Total</span>
+            </div>
+            <div class="col-sm-3 mr-2">
+              <input type="text" class="form-control">
+            </div>
+            <div class="col-sm-3 mr-2">
+              <button class="btn btn-primary">Credit</button>
+            </div>
+            <div class="col-sm-4 ">
+              <button class="btn btn-primary">Go to DN</button>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <h4 class="mt-5">Credit Charges</h4>
+      <div class="table-responsive"> 
+      <table class="table mt-2">
+        <thead>
+          <tr>
+            <th scope="col">Docket</th>
+            <th scope="col">Charge Desc</th>
+            <th scope="col">Charge Amount</th>
+            <th scope="col">Credited Amount</th>
+            <th scope="col">Balance</th>
+            <th scope="col">Vat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+          </tr>
+          <tr>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<%-include('blocks/footer');%>
