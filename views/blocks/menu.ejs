@@ -1,3 +1,148 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">My Tasks</a></li>
+              <li><a class="dropdown-item" href="list_all_client">Reconnect</a></li>
+              <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2">Exit</a></li>
+            </ul>
+          </li>
+          
+          <li class="nav-item dropdown">
+            
+            <a class="nav-link" href="/list_all_client" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+              Clients 
+              <span class="caret1"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Add New</a></li>
+              <li><a class="dropdown-item" href="list_all_client">List All</a></li>
+              <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2">Search</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link " href="/list_all_associates" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Associates
+              <span class="caret1"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalAssociate">Add New</a></li>
+              <li><a class="dropdown-item" href="/list_all_associates">List All</a></li>
+              <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalSearch">Search</a></li>
+              
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Matters
+              <span class="caret1"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModalmatter" href="#">Add Matters</a></li>
+              <li><a class="dropdown-item" href="list_all_matters" >List All Matters</a></li>
+              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModalSearch" href="#">Search Matters</a></li>
+              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModalReferences" href="#">Cited References</a></li>
+              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModalIDS" href="#">IDS List</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link " href="/list_all_document"  role="button"  aria-expanded="false">
+              Documents
+              <span class="caret1"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModalgeneratereport" href="#">Generate Report</a></li>
+              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModallistby" href="#">List By Matter</a></li>
+             
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link " href="/list_contact" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Contacts
+             <span class="caret1"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModaladdnewcontact" href="/list_contact">Add New</a></li>
+              <li><a class="dropdown-item" href="/list_contact_view">List All</a></li>
+              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModaladdsearch" href="#">Search</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Finance
+             <span class="caret1"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="/list_all_finance">Client Billing Information</a>
+               <ul class="dropdown-menu"> 
+              
+                 <li><a class="dropdown-item" data-bs-toggle="modal"  href="/list_all_finance">Office Billing Summary</a></li>
+                 <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModalssum" href="#">Summary For Client</a></li>
+                 <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModalschargehistory" href="#">Charge History</a></li>
+                
+                
+               </ul>
+             </li>
+             <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Accounts Receivable</a>
+               <ul class="dropdown-menu">
+                 <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModaldebitncfe" href="#">Debit Ncfe Lists</a></li>
+                 <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModallogpayment" href="#">Log Payment</a></li>
+                 <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModalcreditchargee" href="#">Credit Charge</a></li>
+                 <li><a class="dropdown-item" data-bs-toggle="modal"    data-bs-target="#exampleModalchargehistory" href="">Charge History</a></li>
+                 <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModalpaymentsearch"  href="#">Payment History</a></li>
+                
+               </ul>
+             </li>
+             <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Accounts Payable</a>
+               <ul class="dropdown-menu">
+                 <li><a class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#exampleModallogpay" href="/exampleModallogpay">Log Pay Request</a></li>
+                 <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModallogpayrequesthistory" >Pay Request History</a></li>
+                
+               </ul>
+             </li>
+           </ul>
+
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Administrative
+             <span class="caret1"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="/list_all_administrative">System Configuration</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModalofficedetail" href="">Office Details</a></li>
+                  <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Users Accounts</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/administrative_user_add">Add Edit Users</a></li>
+                      <li><a class="dropdown-item" href="/administrative_user_roles">Add Edit Roles</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModaleventtotask" href="#">Events 2 Task List</a></li>
+                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModaleventstask" href="#">Events Task List</a></li>
+                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModaltasktypelist" href="#">Task Types List</a></li>
+                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModaltasksteptypes" href="#">Steps Types List</a></li>
+                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModaltaskchargetypes" href="#">Charges Types List</a></li>
+                  <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModaltaskworkflowtree" href="#">Workflow Tree</a></li>
+                </ul>
+              </li>
+             
+            </ul>
+          
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>  
+
 <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light text-capitalize main-font-family">
     <div class="container">
         <a class="navbar-brand" href="/"><img src="imgs/logo.pngs" alt="" /></a>

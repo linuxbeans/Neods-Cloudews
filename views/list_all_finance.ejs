@@ -1,13 +1,14 @@
 <%-include('blocks/header');%>
+<%-include('blocks/menu');%>
 <div class="container-fluid">
-  <div class="row flex-nowrap">
-    <div class="col-2 col-xs-3 col-md-3 col-xl-2 px-sm-2 px-0 bg-light">
+  <div class="row">
+    <!-- <div class="col-2 col-xs-3 col-md-3 col-xl-2 px-sm-2 px-0 bg-light">
       <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
 
 
       </div>
-    </div>
-    <div class="col py-3">
+    </div> -->
+    <!-- <div class="col py-3">
       <h3 class="text-center">Finance List</h3>
 
       <div class="tabs">
@@ -15,13 +16,117 @@
           <li><a href="#tab1">Company Details</a></li>
 
 
-        </ul> <!-- END tabs-nav -->
+        </ul> 
         <div id="tabs-content">
-          <!-- <div id="tab1" class="tab-content">
-          </div> -->
+         
         </div>
 
       </div>
+    </div> -->
+    <!-- -------------------------today---------- -->
+    <div class="col-12"> <h3 class="text-center mt-5">Summary of charges For all Clients</h3> 
+      <h4 class="mt-5">Propats Charge Summary By Client</h4>
+      <div class="table-responsive"> 
+       <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">CLient</th>
+            <th scope="col">Pending f</th>
+            <th scope="col">Released F</th>
+            <th scope="col">Billed F&d</th>
+            <th scope="col">Owed F</th>
+            <th scope="col">Disb</th>
+            <th scope="col">Owed Disb.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>White Smoke</td>
+            <td>0</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <td>White Smoke</td>
+            <td>0</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <td>White Smoke</td>
+            <td>0</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+            <td>@mdo</td>
+          </tr>
+        </tbody>
+       </table>
+      </div>
+      <div class="row">
+        <div class="col-2">
+         <button class="btn btn-secondary">Client charge detail</button>
+        </div>
+        <div class="col-1">
+          <input type="text" class="form-control" placeholder="0" aria-label="First name">
+        </div>
+        <div class="col-2">
+          <input type="text" class="form-control" placeholder="0" aria-label="Last name">
+        </div>
+        <div class="col-2">
+          <input type="text" class="form-control" placeholder="0" aria-label="Last name">
+        </div>
+        <div class="col-2">
+          <input type="text" class="form-control" placeholder="0" aria-label="Last name">
+        </div>
+        <div class="col-1">
+          <input type="text" class="form-control" placeholder="0" aria-label="Last name">
+        </div>
+        <div class="col-1">
+          <input type="text" class="form-control" placeholder="0" aria-label="Last name">
+        </div>
+      </div>
+    </div>
+    <div class="col-7 mt-4">
+      <h4>Collectable for</h4>
+      <div class="table-responsive"> 
+        <table class="table text-center">
+         <thead>
+           <tr>
+             <th scope="col">Months</th>
+             <th scope="col">Prof.fees</th>
+             <th scope="col">Disb</th>
+           </tr>
+         </thead>
+         <tbody>
+           <tr>
+             <td>White</td>
+             <td>0</td>
+             <td>Otto</td>
+             
+           </tr>
+           <tr>
+             <td>White</td>
+             <td>0</td>
+             <td>Otto</td>
+            
+           </tr>
+           <tr>
+             <td>White</td>
+             <td>0</td>
+             <td>Otto</td>
+            
+           </tr>
+         </tbody>
+        </table>
+       </div>
     </div>
   </div>
 </div>
@@ -124,7 +229,7 @@
             </div>
           </div>
           <div class="mb-3 row">
-            <label for="inputPassword" class="col-sm-3 col-form-label">Attach Request Des.</label>
+            <label for="inputPassword" class="col-sm-3 col-form-label">Vendor Payment Requests</label>
             <div class="col-sm-3">
               <button class="btn btn-secondary">Log New DN</button>
             </div>
@@ -275,13 +380,13 @@
           <button type="button" class="btn btn-secondary .mr-1">View Record</button>
         </div>
         <div class="col-sm-3">
-          <button type="button" class="btn btn-secondary .mr-1">View Record</button>
+          <button type="button" class="btn btn-secondary .mr-1">Credit Open Charges</button>
         </div>
         <div class="col-sm-3">
-          <button type="button" class="btn btn-secondary .ml-1">Credit Open Charges</button>
+          <button type="button" class="btn btn-secondary .ml-1">Remove Payment</button>
         </div>
         <div class="col-sm-3">
-          <button type="button" class="btn btn-secondary .ml-1">Credit Open Charges</button>
+          <button type="button" class="btn btn-secondary .ml-1">Edit Record</button>
         </div>
       </div>
 
@@ -615,10 +720,10 @@
       <form class="row g-3 mt-4">
         <div class="row mb-3">
           <div class="col-sm-2">
-            <label for="inputEmail3" class="col-sm-2 col-form-label">Charge For</label>
+            <label for="inputEmail3">Charge For</label>
           </div>
           <div class="col-sm-2">
-            <input type="email" class="form-control" id="inputEmail3">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="Docket">
           </div>
         </div>
       </form>
@@ -643,7 +748,7 @@
             <td>Otto</td>
             <td>@mdo</td>
             <td>Mark</td>
-            <td>Mark</td>
+            <td> <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" ></td>
             <td>Mark</td>
             <td>Mark</td> 
             <td>Mark</td> 
@@ -654,7 +759,7 @@
             <td>Otto</td>
             <td>@mdo</td>
             <td>Mark</td>
-            <td>Mark</td>
+            <td><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" ></td>
             <td>Mark</td>
             <td>Mark</td> 
             <td>Mark</td> 
@@ -783,158 +888,7 @@
   </div>
 </div>
 
-
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModaldebitncfe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel"></h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <h4 class="text-center">Debit Notes</h4>
-      <form class="row g-3 mt-4">
-        <div class="row mb-3">
-          <div class="col-sm-1">
-            <label for="inputEmail3" class="col-sm-2 col-form-label">CLient: </label>
-          </div>
-          <div class="col-sm-4">
-            <input type="email" class="form-control" id="inputEmail3">
-          </div>
-          <div class="col-sm-2">
-            <button type="button" class="btn btn-secondary">Select</button>
-          </div>
-          <div class="col-sm-2">
-            <button type="button" class="btn btn-secondary">Show All</button>
-          </div>
-        </div>
-      </form>
-
-      <h4 class="text-center mt-4">Issued Debit Notes</h4>
-      <form class="row g-3 mt-4">
-        <div class="row mb-3">
-          <!-- <div class="col-sm-1">
-            <label for="inputEmail3" class="col-sm-2 col-form-label">CLient: </label>
-          </div> -->
-          <div class="col-sm-4">
-            <input type="email" class="form-control" id="inputEmail3">
-          </div>
-          <div class="col-sm-4">
-            <input type="email" class="form-control" id="inputEmail3">
-          </div>
-          <!-- <div class="col-sm-2">
-            <button type="button" class="btn btn-secondary">Select</button>
-          </div>
-          <div class="col-sm-2">
-            <button type="button" class="btn btn-secondary">Show All</button>
-          </div> -->
-        </div>
-      </form>
-      <div class="table-responsive"> 
-      <table class="table mt-3">
-        <thead>
-          <tr>
-            <th scope="col">D.N ID</th>
-            <th scope="col">Issue Date</th>
-            <th scope="col">Total Billed</th>
-            <th scope="col">Sent Date</th>
-            <th scope="col">Currency</th>
-            <th scope="col">Closed Date</th>
-            <th scope="col">Status</th>
-            <th scope="col">Collected</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>Mark</td>
-            <td>Mark</td>
-            <td>Mark</td>
-            <td>Mark</td>
-            <td>Mark</td>
-          </tr>
-          <tr>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-            <td>Jacob</td>
-            <td>Jacob</td>
-            <td>Jacob</td>
-            <td>Jacob</td>
-            <td>Jacob</td>
-          </tr>
-          <tr>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-            <td>the Bird</td>
-            <td>the Bird</td>
-            <td>the Bird</td>
-            <td>the Bird</td>
-            <td>the Bird</td>
-          </tr>
-        </tbody>
-      </table>
-      </div>
-      <h4 class="text-center mt-4">Associated Debit Note Charges</h4>
-
-      <div class="table-responsive"> 
-      <table class="table mt-3">
-        <thead>
-          <tr>
-            <th scope="col">Matter Docket</th>
-            <th scope="col">Id</th>
-            <th scope="col">Currency</th>
-            <th scope="col">Dis b.</th>
-            <th scope="col">Charge Desc</th>
-            <th scope="col">charged</th>
-            <th scope="col">Billed</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>Mark</td>
-            <td>Mark</td>
-            <td>Mark</td>
-            <td>Mark</td>
-          </tr>
-          <tr>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-            <td>Jacob</td>
-            <td>Jacob</td>
-            <td>Jacob</td>
-            <td>Mark</td>
-          </tr>
-          <tr>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-            <td>the Bird</td>
-            <td>the Bird</td>
-            <td>the Bird</td>
-            <td>Mark</td>
-          </tr>
-        </tbody>
-      </table>
-      </div>
-      <div class="col-sm-2">
-        <button type="button" class="btn btn-secondary">Clear</button>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-
-
+<!-- ------------------------------ -->
 <!-- Modal -->
 <div class="modal fade" id="exampleModallogpayment" tabindex="-1" aria-labelledby="exampleModalLabel"
   aria-hidden="true">
@@ -956,6 +910,8 @@
           <div class="col-sm-2">
             <button type="button" class="btn btn-secondary">Select</button>
           </div>
+        </div>
+        <div class="row mb-3">
           <div class="col-sm-1">
             <label for="inputEmail3" class="col-sm-2 col-form-label">Date</label>
           </div>
@@ -968,13 +924,15 @@
           <div class="col-sm-4">
             <input type="text" class="form-control" id="inputEmail3">
           </div>
+        </div>
+        <div class="row mb-3"> 
           <div class="col-sm-1">
             <label for="inputEmail3" class="col-sm-2 col-form-label">Payment Type/Id</label>
           </div>
           <div class="col-sm-4">
             <input type="text" class="form-control" id="inputEmail3">
           </div>
-          <div class="col-sm-3">
+          <div class="col-sm-1">
             <label for="inputEmail3" class="col-sm-2 col-form-label">Attach Payment Receipt/DOC</label>
           </div>
           <div class="col-sm-4">
@@ -982,20 +940,27 @@
             <button class="btn btn-primary">View</button>
 
           </div>
-          <div class="col-sm-2">
+        </div>
+        <div class="row mb-3"> 
+          <div class="col-sm-1">
             <label for="inputEmail3" class="col-sm-2 col-form-label">Payment Record Id</label>
           </div>
           <div class="col-sm-2">
             <input type="text" class="form-control" id="inputEmail3">
           </div>
-        </div>
-        <div class="row mb-3 btn-group-toggle">
           <div class="col-sm-5">
             <button class="btn btn-primary">Log Payment</button>
             <button class="btn btn-primary">Cancel</button>
 
           </div>
         </div>
+        <!-- <div class="row mb-3 btn-group-toggle">
+          <div class="col-sm-5">
+            <button class="btn btn-primary">Log Payment</button>
+            <button class="btn btn-primary">Cancel</button>
+
+          </div>
+        </div> -->
       </form>
 
       <h4>Open Charges</h4>
@@ -1116,6 +1081,365 @@
   </div>
 </div>
 
+<!-- ------------------------------------- -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModaldebitncfe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <h4 class="text-center">Debit Notes</h4>
+      <form class="row g-3 mt-4">
+        <div class="row mb-3">
+          <div class="col-sm-1">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">CLient: </label>
+          </div>
+          <div class="col-sm-4">
+            <input type="email" class="form-control" id="inputEmail3">
+          </div>
+          <div class="col-sm-2">
+            <button type="button" class="btn btn-secondary">Select</button>
+          </div>
+          <div class="col-sm-2">
+            <button type="button" class="btn btn-secondary">Show All</button>
+          </div>
+        </div>
+      </form>
+
+      <h4 class="text-center mt-4">Issued Debit Notes</h4>
+      <form class="row g-3 mt-4">
+        <div class="row mb-3">
+          <!-- <div class="col-sm-1">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">CLient: </label>
+          </div> -->
+          <div class="col-sm-4">
+            <input type="email" class="form-control" id="inputEmail3">
+          </div>
+          <div class="col-sm-4">
+            <input type="email" class="form-control" id="inputEmail3">
+          </div>
+       
+        </div>
+      </form>
+      <div class="table-responsive"> 
+      <table class="table mt-3">
+        <thead>
+          <tr>
+            <th scope="col">D.N ID</th>
+            <th scope="col">Issue Date</th>
+            <th scope="col">Total Billed</th>
+            <th scope="col">Sent Date</th>
+            <th scope="col">Currency</th>
+            <th scope="col">Closed Date</th>
+            <th scope="col">Status</th>
+            <th scope="col">Collected</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+          </tr>
+          <tr>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <h4 class="text-center mt-4">Associated Debit Note Charges</h4>
+
+      <div class="table-responsive"> 
+      <table class="table mt-3">
+        <thead>
+          <tr>
+            <th scope="col">Matter Docket</th>
+            <th scope="col">Id</th>
+            <th scope="col">Currency</th>
+            <th scope="col">Dis b.</th>
+            <th scope="col">Charge Desc</th>
+            <th scope="col">charged</th>
+            <th scope="col">Billed</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td> <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"></td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td> <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"></td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td> <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"></td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+            <td>Mark</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="col-sm-2">
+        <button type="button" class="btn btn-secondary">Clear</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalcreditchargee" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <h4 class="text-center">Credit Charges</h4>
+      <form class="row g-3 mt-4">
+        <div class="row mb-3">
+          <div class="col-sm-1">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Client: </label>
+          </div>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" id="inputEmail3">
+          </div>
+          <div class="col-sm-2">
+            <button type="button" class="btn btn-secondary">Select</button>
+          </div>
+        </div> 
+
+      </form>
+
+      <h4 class="mt-5">Available Payment(s)</h4>
+     
+      <div class="table-responsive"> 
+       <table class="table mt-2">
+        <thead>
+          <tr>
+            <th scope="col">Payment Date</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Payment Id</th>
+            <th scope="col">Payment Record Id</th>
+            <th scope="col">Unused Balance</th>
+            <th scope="col">Logged By</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+          </tr>
+          <tr>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+     
+
+      <div class="row mb-3 mt-2">
+        <div class="col-sm-1">
+          <label for="inputEmail3" >Selected Payment Id:</label>
+        </div>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="inputEmail3">
+        </div>
+      </div> 
+      <div class="table-responsive"> 
+      <table class="table ">
+        <thead>
+          <tr>
+            <th scope="col">Docket</th>
+            <th scope="col">Charge Desc</th>
+            <th scope="col">Charge Amount</th>
+            <th scope="col">Credited Amount</th>
+            <th scope="col">Balance</th>
+            <th scope="col">Vat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+          </tr>
+          <tr>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <form class="form-inline">
+        <div class="row mb-3">
+          <div class="col-sm-1">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Credit Amount</label>
+          </div>
+          <div class="col-sm-2">
+            <input type="text" class="form-control" id="inputEmail3">
+          </div>
+          <div class="col-sm-2">
+            <input type="text" class="form-control" id="inputEmail3">
+          </div>
+          <div class="col-sm-1">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Sub Total</label>
+          </div>
+          <div class="col-sm-2">
+            <input type="text" class="form-control" id="inputEmail3">
+          </div>
+        </div> 
+        <div class="row mb-3">
+          <div class="col-sm-2">
+            <button class="btn btn-primary">Discount Credit</button>
+          </div>
+          <div class="col-sm-2">
+            <button class="btn btn-primary">Go to DN</button>
+          </div>
+          <div class="col-sm-2">
+            <button class="btn btn-primary">Credit</button>
+          </div>
+        </div>
+       
+      </form>
+      <h4 class="mt-2">Credited Charges</h4>
+     
+      <div class="table-responsive"> 
+       <table class="table mt-2">
+        <thead>
+          <tr>
+            <th scope="col">Docket</th>
+            <th scope="col">Charge Desc</th>
+            <th scope="col">Charge Amount</th>
+            <th scope="col">Credited Amount</th>
+            <th scope="col">Balance</th>
+            <th scope="col">Payment Record</th>
+            <th scope="col">Vat</th>
+            <th scope="col">Dn id</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+        </tbody>
+      </table>
+      <form class="row g-3 mt-4">
+        <div class="row mb-3">
+         <div class="col-sm-2">
+            <button type="button" class="btn btn-secondary">Close</button>
+          </div>
+        </div> 
+
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
 <!-- Modal -->
 <div class="modal fade" id="exampleModalchargehistory" tabindex="-1" aria-labelledby="exampleModalLabel"
   aria-hidden="true">
@@ -1125,6 +1449,7 @@
         <h5 class="modal-title" id="exampleModalLabel"></h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
+      <div class="modal-body">
       <h4 class="text-center">Client Charge History</h4>
       <form class="row g-3 mt-4">
         <div class="row mb-3">
@@ -1145,7 +1470,7 @@
 
       <h4 class="mt-5">Charges</h4>
       <div class="table-responsive"> 
-      <table class="table mt-2">
+       <table class="table mt-2">
         <thead>
           <tr>
             <th scope="col">C.I.D</th>
@@ -1190,8 +1515,9 @@
             <td>Mark</td>
           </tr>
         </tbody>
-      </table>
+       </table>
       </div>
+     </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Credit Charge</button>
       </div> 
@@ -1240,144 +1566,10 @@
   </div>
 </div>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalcreditcharge" tabindex="-1" aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel"></h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <h4 class="text-center">Credit Charges</h4>
-      <form class="row g-3 mt-4">
-        <div class="row mb-3">
-          <div class="col-sm-1">
-            <label for="inputEmail3" class="col-sm-2 col-form-label">Client: </label>
-          </div>
-          <div class="col-sm-4">
-            <input type="text" class="form-control" id="inputEmail3">
-          </div>
-          <div class="col-sm-2">
-            <button type="button" class="btn btn-secondary">Select</button>
-          </div>
 
 
-      </form>
 
-      <h4 class="mt-5">Available Payments</h4>
-      <div class="table-responsive"> 
-      <table class="table mt-2">
-        <thead>
-          <tr>
-            <th scope="col">Payment Date</th>
-            <th scope="col">Amount</th>
-            <th scope="col">Payment Id</th>
-            <th scope="col">Payment Record Id</th>
-            <th scope="col">Unused Balance</th>
-            <th scope="col">Logged By</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>Mark</td>
-            <td>Mark</td>
-            <td>Mark</td>
-          </tr>
-          <tr>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-            <td>Jacob</td>
-            <td>Jacob</td>
-            <td>Jacob</td>
-          </tr>
-          <tr>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-            <td>the Bird</td>
-            <td>the Bird</td>
-            <td>the Bird</td>
-          </tr>
-        </tbody>
-      </table>
-      </div>
-      <form class="form-inline">
-        <div class="col-sm-4">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="">Credit Amount</span>
-            </div>
-            <input type="text" class="form-control">
-            <input type="text" class="form-control">
-          </div>
-        </div>
-        <div class="col-sm-12">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="">Sub Total</span>
-            </div>
-            <div class="col-sm-3 mr-2">
-              <input type="text" class="form-control">
-            </div>
-            <div class="col-sm-3 mr-2">
-              <button class="btn btn-primary">Credit</button>
-            </div>
-            <div class="col-sm-4 ">
-              <button class="btn btn-primary">Go to DN</button>
-            </div>
-          </div>
-        </div>
-      </form>
 
-      <h4 class="mt-5">Credit Charges</h4>
-      <div class="table-responsive"> 
-      <table class="table mt-2">
-        <thead>
-          <tr>
-            <th scope="col">Docket</th>
-            <th scope="col">Charge Desc</th>
-            <th scope="col">Charge Amount</th>
-            <th scope="col">Credited Amount</th>
-            <th scope="col">Balance</th>
-            <th scope="col">Vat</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>Mark</td>
-            <td>Mark</td>
-            <td>Mark</td>
-          </tr>
-          <tr>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-            <td>Jacob</td>
-            <td>Jacob</td>
-            <td>Jacob</td>
-          </tr>
-          <tr>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-            <td>the Bird</td>
-            <td>the Bird</td>
-            <td>the Bird</td>
-          </tr>
-        </tbody>
-      </table>
-      </div>
-    </div>
-  </div>
-</div>
 
 
 

@@ -17,52 +17,53 @@
 <div class="container-fluid">
   <h3 class="text-center">Add/Edit User</h3>
   <div class="row">
-    <div class="col-sm-6" style="background-color:lavender;">
+    <div class="col-md-6" >
       <form class="row g-3 mt-4">
         <div class="row mb-3">
-          <div class="col-sm-4">
-            <label for="inputEmail3" class="col-sm-2 col-form-label">User/Name</label>
+          <div class="col-md-4">
+            <label for="inputEmail3" >User/Name:</label>
           </div>
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <input type="text" class="form-control" id="inputEmail3">
           </div>
-          <div class="col-sm-4">
-            <label for="inputEmail3" class="col-sm-4 col-form-label">Log In</label>
+          <div class="col-md-4">
+            <label for="inputEmail3" >Log In:</label>
           </div>
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <input type="text" class="form-control" id="inputEmail3">
           </div>
-          <div class="col-sm-4">
-            <label for="inputEmail3" class="col-sm-2 col-form-label">Password</label>
+          <div class="col-md-4">
+            <label for="inputEmail3" >Password:</label>
           </div>
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <input type="text" class="form-control" id="inputEmail3">
           </div>
-          <div class="col-sm-4">
-            <label for="inputEmail3" class="col-sm-2 col-form-label">Confirm Password</label>
+          <div class="col-md-4">
+            <label for="inputEmail3" >Confirm Password:</label>
           </div>
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <input type="text" class="form-control" id="inputEmail3">
           </div>
-          <div class="col-sm-4">
+          <div class="col-md-4 mt-4">
             <button class="btn btn-secondary">Add User</button>
           </div>
         </div>
       </form>
     </div>
-    <div class="col-sm-6" style="background-color:lavender;">
+    <div class="col-sm-6">
       <form class="row g-3 mt-4">
         <div class="row mb-3">
           <p>Permission:</p>
-          <div class="col-sm-4">
+          <div class="col-md-4">
             <label for="inputEmail3" class="col-sm-2 col-form-label">Roles:</label>
           </div>
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <input type="text" class="form-control" id="inputEmail3">
           </div>
-          <div class="col-sm-4">
-            <button class="btn btn-secondary">Edit Custom</button>
+          <div class="col-md-8 mt-3">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-secondary">Edit Custom</button>
           </div>
+          <div class="col-md-8 mt-5">
           <div class="form-check">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">Patent Specialist</label>
@@ -75,13 +76,157 @@
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">Paralegal</label>
           </div>
-          <div class="col-sm-4">
+        </div>
+          <div class="col-md-8 mt-4">
             <button class="btn btn-secondary">Save</button>
           </div>
         </div>
       </form>
     </div>
   </div>
+
+    <!-- ------------------addminsitrative user subpopup------------ -->
+    <!-- Modal -->
+
+    <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <!-- <h5 class="text-center">Add Permisson Role</h5> -->
+        <div class="modal-body">
+         <div class="row"> 
+           
+          <div class="col-sm-10">
+            <div class="col-sm-4">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Roles:</label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" placeholder="DCOHEN Custom Role">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Description</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          </div>
+  
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="table-responsive"> 
+            <table class="table">
+              <thead class="test-thead">
+                <tr>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody class="mt-4">
+                <tr>
+                  <td></td>
+                </tr>
+                <tr >
+                 <td>Client Information</td>
+                 </tr>
+                <tr>
+                  <td>Matter Info</td>
+               </tr>
+                <tr>
+                  <td>Billing Info</td>
+                </tr>
+                <tr>
+                  <td>System Admin</td>
+                </tr>
+              </tbody>
+            </table>
+           </div>
+           
+          </div> 
+          <div class="col-sm-5">
+            <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">N</th>
+                  <th scope="col">R</th>
+                  <th scope="col">A</th>
+                  <th scope="col">E</th>
+                  <th scope="col">D</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input class="form-check-input" type="checkbox" value=""  ></td>
+                  <td><input class="form-check-input" type="checkbox" value=""  ></td>
+                  <td><input class="form-check-input" type="checkbox" value=""  ></td>
+                  <td><input class="form-check-input" type="checkbox" value=""  ></td>
+                  <td><input class="form-check-input" type="checkbox" value=""  ></td>
+                </tr>
+                <tr>
+                  <td><input class="form-check-input" type="checkbox" value=""  ></td>
+                  <td><input class="form-check-input" type="checkbox" value=""  ></td>
+                  <td><input class="form-check-input" type="checkbox" value=""  ></td>
+                  <td><input class="form-check-input" type="checkbox" value=""  ></td>
+                  <td><input class="form-check-input" type="checkbox" value=""  ></td>
+                </tr>
+                <tr>
+                  <td><input class="form-check-input" type="checkbox" value=""  ></td>
+                  <td><input class="form-check-input" type="checkbox" value=""  ></td>
+                  <td><input class="form-check-input" type="checkbox" value=""  ></td>
+                  <td><input class="form-check-input" type="checkbox" value=""  ></td>
+                  <td><input class="form-check-input" type="checkbox" value=""  ></td>
+                </tr>
+                <tr>
+                  <td><input class="form-check-input" type="checkbox" value=""  ></td>
+                  <td><input class="form-check-input" type="checkbox" value=""  ></td>
+                  <td><input class="form-check-input" type="checkbox" value=""  ></td>
+                  <td><input class="form-check-input" type="checkbox" value=""  ></td>
+                  <td><input class="form-check-input" type="checkbox" value=""  ></td>
+                </tr>
+              </tbody>
+            </table>
+           </div>
+          </div> 
+          <div class="col-md-3">
+            <div class="table-responsive"> 
+             <table class="table">
+               <thead>
+                 <tr>
+                   <th scope="col">Restricted</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <td><input class="form-check-input" type="checkbox" value=""  ></td>
+                 </tr>
+                 <tr>
+                   <td><input class="form-check-input" type="checkbox" value=""  ></td>
+                 </tr>
+       
+               </tbody>
+             </table>
+            </div>
+           </div>
+           <div class="row mt-4">
+            <div class="col-sm-5">
+              <button data-bs-toggle="modal" data-bs-target="#adminstrativeaddrole" class="btn btn-secondary">Add Role</button>
+              <button class="btn btn-secondary">Save</button>
+             </div>
+          </div>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- ----------------------------------------------------------- -->
+
 </div>
+
+
 
 <%-include('blocks/footer');%>
