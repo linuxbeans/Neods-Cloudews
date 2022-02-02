@@ -1,4 +1,5 @@
 <%-include('blocks/header');%>
+<%-include('blocks/menu');%>
 <!-- <div class="container-fluid">
   <div class="row flex-nowrap">
     <div class="col-2 col-xs-3 col-md-3 col-xl-2 px-sm-2 px-0 bg-light">
@@ -224,7 +225,3652 @@
     </div>
   </div>
     <!-- ----------------------------------------------------------- -->
+     <!-- --------------add all popup list of adminstrative---------- -->
+         
+<!-- Modal -->
+<div class="modal fade" id="exampleModalofficedetail" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel"></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <h2 class="modal-title text-center mb-3">View/Edit Client:</h2>
+    <h3 class="modal-title text-center mb-3">Professional Patent Solutions</h3>
+    <div class="modal-body">
+      <div class="tabs">
+        <ul id="tabs-nav">
+          <li><a href="#tab1">Company Details</a></li>
+          <li><a href="#tab2">Matters</a></li>
+          <li><a href="#tab3">Contacts</a></li>
 
+        </ul> <!-- END tabs-nav -->
+        <div id="tabs-content">
+          <div id="tab1" class="tab-content">
+            <form class="row g-3 ">
+              <div class="col-md-4 mt-5">
+                <label for="inputEmail4" class="form-label">Company Name</label>
+                <input type="text" class="form-control" id="inputEmail4">
+              </div>
+              <div class="col-md-4 mt-5">
+                <label for="inputPassword4" class="form-label">ABV</label>
+                <input type="text" class="form-control" id="inputPassword4">
+              </div>
+              <div class="col-4 mt-5">
+                <label for="inputAddress" class="form-label">Street Address </label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+              </div>
+              <div class="col-6">
+                <label for="inputAddress2" class="form-label">Street Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="1234 Main St">
+              </div>
+              <div class="col-md-6 ">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-6 ">
+                <label for="inputCity" class="form-label">Postel Code</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">State</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-6 ">
+                <label for="inputCity" class="form-label">Country</label>
+                <input type="text" class="form-control" id="inputCity">
+                <button class="btn btn-secondary">Edit</button>
+              </div>
+              <div class="col-md-6 ">
+                <label for="inputCity" class="form-label">Main Phone</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-6 ">
+                <label for="inputCity" class="form-label">Main FAX</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-6 ">
+                <label for="inputCity" class="form-label">Main Email</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-6 ">
+                <label for="inputCity" class="form-label">RESP.SPEC:</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">Registration No.</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="form-check col-md-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Small Entity
+                </label>
+              </div>
+              <div class="form-check col-md-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  VAT Exempt
+                </label>
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">ACCOUNTING</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">PARALEGAL</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">Belongs To:</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+
+              <div class="col-md-6 checkbox mt-3" style="display: inline-block;">
+                <label class="unselectable">
+                  Company Memos:</label>
+                <div class="btn-group mr-2" role="group" aria-label="First group">
+                  <button type="button" class="btn btn-secondary">View</button>
+                </div>
+                <div class="btn-group mr-2" role="group" aria-label="First group">
+                  <button type="button" class="btn btn-secondary">Add</button>
+                </div>
+              </div>
+
+
+
+            </form>
+            <h3 class="text-center m-5">PRIMARY CONTACT</h3>
+
+            <div class="container">
+
+              <form class="row g-3" action="/action_page.php">
+                <div class="form-group row mt-3">
+                  <label class="control-label col-sm-2" for="email">Title</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" name="title">
+                  </div>
+                  <label class="control-label col-sm-2" for="pwd">Name</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" name="name">
+                  </div>
+                </div>
+                <div class="form-group row mt-3">
+                  <label class="control-label col-sm-2" for="pwd">Role</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" name="role">
+                  </div>
+                  <label class="control-label col-sm-2" for="pwd">Primary Phone</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" name="primary_phone">
+                  </div>
+                </div>
+                <div class="form-group row mt-3">
+                  <label class="control-label col-sm-2" for="pwd">Fax</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" name="fax">
+                  </div>
+                  <label class="control-label col-sm-2" for="pwd">Second Phone</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" name="secondary_phone">
+                  </div>
+                </div>
+                <div class="form-group row mt-3">
+                  <label class="control-label col-sm-2" for="pwd">Email(s)</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" name="fax">
+                  </div>
+                </div>
+
+              </form>
+            </div>
+
+            <!-- <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button mr-2" class="btn btn-secondary">Open Company Window</button>
+                    <button type="button mr-2" class="btn btn-secondary">Compose Email</button>
+                    <button type="button" class="btn btn-secondary">Compose Letter</button>
+                  </div> -->
+
+            <div class="col-md-9 checkbox mt-3" style="display: inline-block;">
+
+              <div class="btn-group mr-2" role="group" aria-label="First group">
+                <button type="button" class="btn btn-secondary  mr-2">Remove</button>
+              </div>
+              <div class="btn-group mr-2" role="group" aria-label="First group">
+                <button type="button" class="btn btn-secondary  mr-2">Compose Letter</button>
+              </div>
+              <div class="btn-group mr-2" role="group" aria-label="First group">
+                <button type="button" class="btn btn-secondary  mr-2">Compose Email</button>
+              </div>
+              <div class="btn-group mr-2" role="group" aria-label="First group">
+                <button type="button" class="btn btn-secondary  mr-2">Close</button>
+              </div>
+            </div>
+
+          </div>
+          <div id="tab2" class="tab-content">
+            <div class="row g-3 align-items-center">
+              <div class="col-auto">
+                <label for="inputPassword6" class="col-form-label">Matters Families For:</label>
+              </div>
+              <div class="col-auto">
+                <input type="text" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="table mt-4">
+                <thead>
+                  <tr>
+                    <th scope="col">Root Docket</th>
+                    <th scope="col">Family Name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                  </tr>
+                  <tr>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="row g-3 align-items-center">
+              <div class="col-auto">
+                <label for="inputPassword6" class="col-form-label">Matters In Family</label>
+              </div>
+              <div class="col-auto">
+                <input type="text" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="table mt-4">
+                <thead>
+                  <tr>
+                    <th scope="col">Matters Docket</th>
+                    <th scope="col">Matter title</th>
+                    <th scope="col">App No</th>
+                    <th scope="col">NextDeadLine</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>hacda</td>
+                  </tr>
+                  <tr>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>hacda</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+              <div class="btn-group mr-2" role="group" aria-label="Second group">
+                <button type="button" data-bs-toggle="modal"
+                data-bs-target="#exampleModalmattersaddnew"  class="btn btn-secondary">Add New</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="tab3" class="tab-content">
+            <div class="row g-3 align-items-center">
+              <div class="col-auto">
+                <label for="inputPassword6" class="col-form-label">Contact For</label>
+              </div>
+              <div class="col-auto">
+                <input type="text" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+              </div>
+              <div class="col-auto">
+
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="table mt-4">
+                <thead>
+                  <tr>
+                    <th scope="col">Name:</th>
+                    <th scope="col">Role:</th>
+                    <th scope="col">Phone No:</th>
+                    <th scope="col">Fax No:</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">POC</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>hacda</td>
+                    <td>hacda</td>
+                    <td>hacda</td>
+                  </tr>
+                  <tr>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>hacda</td>
+                    <td>hacda</td>
+                    <td>hacda</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-9 checkbox mt-3" style="display: inline-block;">
+              <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group mr-4" role="group" aria-label="First group">
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModalmattercontactpopup" class="btn btn-secondary">Add New</button>
+                </div>
+                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                  <button type="button" class="btn btn-secondary">Edit</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModallogpayrequesthistory" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel"></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <h5 class="modal-title text-center mb-3">Vendor Debit Note Summary</h5>
+    <div class="modal-body">
+      <form class="row g-3 ">
+
+        <div class="mb-3 row">
+          <label for="inputPassword" class="col-sm-1 col-form-label">For</label>
+          <div class="col-sm-3">
+            <input type="text" class="form-control">
+          </div>
+          <div class="col-sm-2">
+            <button class="btn btn-secondary">Select</button>
+          </div>
+          <div class="col-sm-2">
+            <button class="btn btn-secondary">Show All</button>
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="inputPassword" class="col-sm-3 col-form-label">Show Only Paid:</label>
+          <div class="col-sm-4">
+            <input type="text" class="form-control">
+            <!-- <select id="inputState" class="form-select">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select> -->
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="inputPassword" class="col-sm-3 col-form-label">Attach Request Des.</label>
+          <div class="col-sm-3">
+            <button class="btn btn-secondary">Log New DN</button>
+          </div>
+          <div class="col-sm-3">
+            <button class="btn btn-secondary">View DN Details</button>
+          </div>
+          <div class="col-sm-3">
+            <button class="btn btn-secondary">Remove DN</button>
+          </div>
+        </div>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Payment Request Id</th>
+                <th scope="col">Amount Requested</th>
+                <th scope="col">Paid</th>
+                <th scope="col">Desc.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>Otto</td>
+                <td>Otto</td>
+              </tr>
+              <tr>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>Jacob</td>
+                <td>Jacob</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="mb-3 row">
+          <label for="inputPassword" class="col-sm-4 col-form-label">Associated Client Charges</label>
+          <div class="col-sm-3">
+            <button class="btn btn-secondary">Link Charge</button>
+          </div>
+          <div class="col-sm-3">
+            <button class="btn btn-secondary">Delink Charge</button>
+          </div>
+        </div>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Matter Docket</th>
+                <th scope="col">Charge Id</th>
+                <th scope="col">Amount Charged</th>
+                <th scope="col">Collected</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>Otto</td>
+              </tr>
+              <tr>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>Jacob</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalpaymentsearch" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Client Payment History</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <h4 class="text-center">Client Payment History</h4>
+    <form class="row g-3 mt-4">
+      <div class="row mb-3">
+        <div class="col-sm-1">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">CLient: </label>
+        </div>
+        <div class="col-sm-4">
+          <input type="email" class="form-control" id="inputEmail3">
+        </div>
+        <div class="col-sm-4">
+          <button type="button" class="btn btn-secondary">Select</button>
+        </div>
+      </div>
+    </form>
+
+    <h4>Payments</h4>
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Payment Date</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Payment Id</th>
+            <th scope="col">Payment Record Id</th>
+            <th scope="col">Unused Balance</th>
+            <th scope="col">Logged By</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+          </tr>
+          <tr>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="row mb-3">
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-secondary .mr-1">View Record</button>
+      </div>
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-secondary .mr-1">View Record</button>
+      </div>
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-secondary .ml-1">Credit Open Charges</button>
+      </div>
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-secondary .ml-1">Credit Open Charges</button>
+      </div>
+    </div>
+
+    <form class="row g-3 mt-2">
+      <div class="row mb-2">
+        <label for="inputEmail3" class="col-sm-5 col-form-label">Credited Charges For Payment Record Id: </label>
+        <div class="col-sm-4">
+          <input type="email" class="form-control" id="inputEmail3">
+        </div>
+      </div>
+    </form>
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Docket</th>
+            <th scope="col">Charge Desc</th>
+            <th scope="col">Charge Amount</th>
+            <th scope="col">Credited Amount</th>
+            <th scope="col">Balance</th>
+            <th scope="col">Credited By</th>
+            <th scope="col">Vat</th>
+            <th scope="col">Dn Id</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+            <td>Mark</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="row mb-3">
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-secondary .mr-1">Remove Credit</button>
+      </div>
+      <div class="col-sm-3">
+        <button type="button" class="btn btn-secondary .mr-1">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalofficebilling" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel"></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <h4 class="text-center">Summary of Charges for All Client</h4>
+
+
+    <form class="row g-3 mt-4">
+      <div class="row mb-3">
+        <div class="col-sm-1">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">CLient: </label>
+        </div>
+        <div class="col-sm-4">
+          <input type="email" class="form-control" id="inputEmail3">
+        </div>
+        <div class="col-sm-4">
+          <button type="button" class="btn btn-secondary">Select</button>
+        </div>
+      </div>
+    </form>
+    <h5>Propats Charge Summary By Client</h5>
+    <div class="table-responsive">
+      <table class="table mt-2">
+        <thead>
+          <tr>
+            <th scope="col">Client</th>
+            <th scope="col">Pending F</th>
+            <th scope="col">Released F</th>
+            <th scope="col">Billed f&D</th>
+            <th scope="col">Owed F</th>
+            <th scope="col">Disb</th>
+            <th scope="col">Owed Disb</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h5>Collected For:</h5>
+    <div class="table-responsive">
+      <table class="table mt-2">
+        <thead>
+          <tr>
+            <th scope="col">Months</th>
+            <th scope="col">Prof. Fees</th>
+            <th scope="col">Disb.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-sm-2">
+      <button type="button" class="btn btn-secondary">Open Charge</button>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalssum" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-xl">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel"></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <h4 class="text-center">Summary of Charges Per Client & Per Matter</h4>
+
+
+    <form class="row g-3 mt-4">
+      <div class="row mb-3">
+        <div class="col-sm-1">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">CLient: </label>
+        </div>
+        <div class="col-sm-4">
+          <input type="email" class="form-control" id="inputEmail3">
+        </div>
+        <div class="col-sm-4">
+          <button type="button" class="btn btn-secondary">Select</button>
+        </div>
+      </div>
+    </form>
+    <h3>All Charges For Client</h3>
+    <form class="row g-3 mt-4">
+      <div class="row mb-3">
+        <div class="col-sm-4">
+          <button type="button" class="btn btn-secondary">Generate New DN</button>
+        </div>
+      </div>
+    </form>
+    <div class="table-responsive">
+      <table class="table mt-3">
+        <thead>
+          <tr>
+            <th scope="col">Docket</th>
+            <th scope="col">Pending</th>
+            <th scope="col">Released </th>
+            <th scope="col">Billed</th>
+            <th scope="col">Collected</th>
+            <th scope="col">Credited</th>
+            <th scope="col">Disb.</th>
+            <th scope="col">Billed Disb.</th>
+            <th scope="col">Collected Dl</th>
+            <th scope="col">Credited Disb</th>
+            <th scope="col">Collectable</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <form>
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control">
+        </div>
+      </div>
+    </form>
+
+    <form class="row g-3 mt-4">
+      <div class="row mb-3">
+        <div class="col-sm-2">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Charge For</label>
+        </div>
+        <div class="col-sm-2">
+          <input type="email" class="form-control" id="inputEmail3">
+        </div>
+      </div>
+    </form>
+    <div class="table-responsive">
+      <table class="table mt-3">
+        <thead>
+          <tr>
+            <th scope="col">Task Desc.</th>
+            <th scope="col">Charge Desc.</th>
+            <th scope="col">Currency </th>
+            <th scope="col">Amount </th>
+            <th scope="col">Disb.</th>
+            <th scope="col">Billed Date</th>
+            <th scope="col">Collected</th>
+            <th scope="col">Credited</th>
+            <th scope="col">DN</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-sm-4">
+      <button type="button" class="btn btn-secondary">Open Charge</button>
+      <button type="button" class="btn btn-secondary">Close</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalschargehistory" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel"></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <h4 class="text-center">Client Charge History</h4>
+
+    <form class="row g-3 mt-4">
+      <div class="row mb-3">
+        <div class="col-sm-1">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">CLient: </label>
+        </div>
+        <div class="col-sm-4">
+          <input type="email" class="form-control" id="inputEmail3">
+        </div>
+        <div class="col-sm-3">
+          <button type="button" class="btn btn-secondary">Select</button>
+        </div>
+        <div class="col-sm-3">
+          <button type="button" class="btn btn-secondary">Show All</button>
+        </div>
+      </div>
+    </form>
+    <h5>Charges:</h5>
+    <div class="table-responsive">
+      <table class="table mt-2">
+        <thead>
+          <tr>
+            <th scope="col">C.I.D</th>
+            <th scope="col">C.E Date</th>
+            <th scope="col">Billed Date</th>
+            <th scope="col">Docket</th>
+            <th scope="col">Charge Desc.</th>
+            <th scope="col">C.Amnt.</th>
+            <th scope="col">Balance</th>
+            <th scope="col">Closed Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-sm-2">
+      <button type="button" class="btn btn-secondary">Credit Charge</button>
+    </div>
+    <h5>Credited Records($)</h5>
+    <div class="table-responsive">
+      <table class="table mt-2">
+        <thead>
+          <tr>
+            <th scope="col">Credit Date</th>
+            <th scope="col">Credit Amount</th>
+            <th scope="col">Payment Id</th>
+            <th scope="col">Payment Record Id</th>
+            <th scope="col">Logged By</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-sm-5">
+      <button type="button" class="btn btn-secondary">Remove Credit</button>
+      <button type="button" class="btn btn-secondary">View Record</button>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModaldebitncfe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel"></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <h4 class="text-center">Debit Notes</h4>
+    <form class="row g-3 mt-4">
+      <div class="row mb-3">
+        <div class="col-sm-1">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">CLient: </label>
+        </div>
+        <div class="col-sm-4">
+          <input type="email" class="form-control" id="inputEmail3">
+        </div>
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-secondary">Select</button>
+        </div>
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-secondary">Show All</button>
+        </div>
+      </div>
+    </form>
+
+    <h4 class="text-center mt-4">Issued Debit Notes</h4>
+    <form class="row g-3 mt-4">
+      <div class="row mb-3">
+        <!-- <div class="col-sm-1">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">CLient: </label>
+        </div> -->
+        <div class="col-sm-4">
+          <input type="email" class="form-control" id="inputEmail3">
+        </div>
+        <div class="col-sm-4">
+          <input type="email" class="form-control" id="inputEmail3">
+        </div>
+        <!-- <div class="col-sm-2">
+          <button type="button" class="btn btn-secondary">Select</button>
+        </div>
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-secondary">Show All</button>
+        </div> -->
+      </div>
+    </form>
+    <div class="table-responsive">
+      <table class="table mt-3">
+        <thead>
+          <tr>
+            <th scope="col">D.N ID</th>
+            <th scope="col">Issue Date</th>
+            <th scope="col">Total Billed</th>
+            <th scope="col">Sent Date</th>
+            <th scope="col">Currency</th>
+            <th scope="col">Closed Date</th>
+            <th scope="col">Status</th>
+            <th scope="col">Collected</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+          </tr>
+          <tr>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4 class="text-center mt-4">Associated Debit Note Charges</h4>
+
+    <div class="table-responsive">
+      <table class="table mt-3">
+        <thead>
+          <tr>
+            <th scope="col">Matter Docket</th>
+            <th scope="col">Id</th>
+            <th scope="col">Currency</th>
+            <th scope="col">Dis b.</th>
+            <th scope="col">Charge Desc</th>
+            <th scope="col">charged</th>
+            <th scope="col">Billed</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+            <td>Mark</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-sm-2">
+      <button type="button" class="btn btn-secondary">Clear</button>
+    </div>
+
+  </div>
+</div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModallogpayment" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel"></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <h4 class="text-center">Log Received Payment</h4>
+    <form class="row g-3 mt-4">
+      <div class="row mb-3">
+        <div class="col-sm-1">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Client: </label>
+        </div>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="inputEmail3">
+        </div>
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-secondary">Select</button>
+        </div>
+        <div class="col-sm-1">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Date</label>
+        </div>
+        <div class="col-sm-4">
+          <input type="date" class="form-control" id="inputEmail3">
+        </div>
+        <div class="col-sm-1">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Amount (USD)</label>
+        </div>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="inputEmail3">
+        </div>
+        <div class="col-sm-1">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Payment Type/Id</label>
+        </div>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="inputEmail3">
+        </div>
+        <div class="col-sm-3">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Attach Payment Receipt/DOC</label>
+        </div>
+        <div class="col-sm-4">
+          <button class="btn btn-primary">Attach</button>
+          <button class="btn btn-primary">View</button>
+
+        </div>
+        <div class="col-sm-2">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Payment Record Id</label>
+        </div>
+        <div class="col-sm-2">
+          <input type="text" class="form-control" id="inputEmail3">
+        </div>
+      </div>
+      <div class="row mb-3 btn-group-toggle">
+        <div class="col-sm-5">
+          <button class="btn btn-primary">Log Payment</button>
+          <button class="btn btn-primary">Cancel</button>
+
+        </div>
+      </div>
+    </form>
+
+    <h4>Open Charges</h4>
+    <div class="table-responsive">
+      <table class="table mt-2">
+        <thead>
+          <tr>
+            <th scope="col">Docket</th>
+            <th scope="col">Charge Desc</th>
+            <th scope="col">Charge Amount</th>
+            <th scope="col">Balance</th>
+            <th scope="col">Vat</th>
+            <th scope="col">Billed Date</th>
+            <th scope="col">Dn_ID</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+          </tr>
+          <tr>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <form class="form-inline">
+      <div class="col-sm-4">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="">Credit Amount</span>
+          </div>
+          <input type="text" class="form-control">
+          <input type="text" class="form-control">
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="">Sub Total</span>
+          </div>
+          <div class="col-sm-3 mr-2">
+            <input type="text" class="form-control">
+          </div>
+          <div class="col-sm-3 mr-2">
+            <button class="btn btn-primary">Credit</button>
+          </div>
+          <div class="col-sm-4 ">
+            <button class="btn btn-primary">Go to DN</button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <h4 class="mt-5">Credit Charges</h4>
+    <div class="table-responsive">
+      <table class="table mt-2">
+        <thead>
+          <tr>
+            <th scope="col">Docket</th>
+            <th scope="col">Charge Desc</th>
+            <th scope="col">Charge Amount</th>
+            <th scope="col">Credited Amount</th>
+            <th scope="col">Balance</th>
+            <th scope="col">Vat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+          </tr>
+          <tr>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- --------------------------------------- -->
+<!-- <div class="modal fade" id="exampleModaleventtotask" >
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <h5 class="text-center" id="exampleModalLabel">Event To Task To Step Associations</h5>
+    <div class="modal-body">
+      <div class="table-responsive"> 
+     
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary">Estimates</button>
+        <button type="button" class="btn btn-secondary">Edit Event Type</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Add Event Type</button>
+      </div>
+      <h5>Triggered Task Types:</h5>
+      <div class="table-responsive"> 
+      <table class="table mt-4">
+        <thead>
+          <tr>
+            <th scope="col">Task ABV.</th>
+            <th scope="col">Task Desc.</th>
+            <th scope="col">First Relative Deadline</th>
+            <th scope="col">Final Relative Deadline</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>Mark</td>
+            <td>Otto</td>
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>Mark</td>
+            <td>Otto</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary">Attention</button>
+        <button type="button" class="btn btn-secondary">New Step </button>
+        <button type="button" class="btn btn-secondary">New Step Type</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+      </div>
+      <h5>Task Types:</h5>
+    <div class="table-responsive"> 
+      <table class="table mt-4">
+        <thead>
+          <tr>
+            <th scope="col">Order No.</th>
+            <th scope="col">Step Desc.</th>
+            <th scope="col">Step Abv.</th>
+            <th scope="col">Depends On</th>
+            <th scope="col">Optional</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>Otto</td>
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>Otto</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+      <h5>Move Steps:</h5>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary">New Step Type</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div> -->
+<!-- ------------------------------------today------------ -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModaleventtotask" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <h5 class="text-center">Event To Task To Step Associations</h5>
+    <div class="modal-body">
+      <div class="table-responsive">
+        <div class="container">
+          <div class="row align-items-start">
+            <div class="col">
+              <h5 class="">Event List</h5>
+            </div>
+            <div class="col">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="">
+                <label class="form-check-label" for="flexCheckChecked">
+                  Enable Filters
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <table class="table mt-4">
+          <thead>
+            <tr>
+              <td><input type="text" style="width: 50px;"></td>
+              <td></td>
+              <td><input type="text" style="width: 50px;"></td>
+              <td><input type="text" style="width: 50px;"></td>
+              <td></td>
+              <td><input type="text" style="width: 50px;"></td>
+              <td><input type="text" style="width: 50px;"></td>
+              <td><input type="text" style="width: 50px;"></td>
+              <td><input type="text" style="width: 50px;"></td>
+            </tr>
+          </thead>
+          <thead>
+            <tr>
+              <th scope="col">ABV.</th>
+              <th scope="col">MT.</th>
+              <th scope="col">Desc.</th>
+              <th scope="col">Country</th>
+              <th scope="col">S.E.</th>
+              <th scope="col">P.F.E</th>
+              <th scope="col">P.R.E</th>
+              <th scope="col">P.A.E</th>
+              <th scope="col">P.C.E</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>Mark</td>
+            </tr>
+            <tr>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>Mark</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary">Estimates</button>
+        <button type="button" class="btn btn-secondary">Edit Event Type</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Add Event Type</button>
+      </div>
+      <h5>Triggered Task Types:</h5>
+      <div class="table-responsive">
+        <table class="table mt-4">
+          <thead>
+            <tr>
+              <th scope="col">Task ABV.</th>
+              <th scope="col">Task Desc.</th>
+              <th scope="col">First Relative Deadline</th>
+              <th scope="col">Final Relative Deadline</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>Mark</td>
+              <td>Otto</td>
+            </tr>
+            <tr>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>Mark</td>
+              <td>Otto</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary">Attention</button>
+        <button type="button" class="btn btn-secondary">New Step </button>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModalnewtasktype" class="btn btn-secondary">New Task Type</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+      </div>
+      <h5>Task Types:</h5>
+      <div class="table-responsive">
+        <table class="table mt-4">
+          <thead>
+            <tr>
+              <th scope="col">Order No.</th>
+              <th scope="col">Step Desc.</th>
+              <th scope="col">Step Abv.</th>
+              <th scope="col">Depends On</th>
+              <th scope="col">Optional</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>Otto</td>
+            </tr>
+            <tr>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>Otto</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h5>Move Steps:</h5>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary">New Step Type</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">create</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">save</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ---------New task type inside Subpopup form-------- -->
+<div class="modal fade" id="exampleModalnewtasktype" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-xl">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <h5 class="text-center" id="exampleModalLabel">Add Task Type</h5>
+    <div class="modal-body">
+      <div class="row">
+        <div class="col-md-12">
+          <form method="Post" action="" class="row g-3">
+            <div class="col-auto">
+              <label for="inputEmail3" class="col-form-label">Task Abv:</label>
+            </div>
+            <div class="col-auto">
+              <input type="text" class="form-control" id="inputEmail3">
+            </div>
+            <div class="col-md-12">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Requires Authorization</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Accounting Task</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Paralegal Task</label>
+              </div>
+            </div>
+
+            <div class="col-auto">
+              <label for="inputPassword6" class="col-form-label">Deadline Based On</label>
+            </div>
+            <div class="col-auto">
+              <input type="date" class="form-control" placeholder="Event Date" aria-describedby="passwordHelpInline">
+            </div>
+            <div class="col-md-12">
+              <div class="col-auto">
+                <label for="inputPassword6" class="col-form-label">Task Desc.</label>
+              </div>
+              <div class="col-auto">
+                <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+              </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <h5 class="mt-2">EVENT REALTIVE DEADLINE</h5>
+
+            <div class="row">
+              <div class="col-2">
+                <label for="inputPassword6" class="col-form-label">First</label>
+              </div>
+              <div class="col-10">
+                <div class="row">
+                  <div class="col-6">
+                    <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                  </div>
+                  <div class="col-6">
+                    <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2">
+                <label for="inputPassword6" class="col-form-label">Second:</label>
+              </div>
+              <div class="col-10">
+                <div class="row">
+                  <div class="col-6">
+                    <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                  </div>
+                  <div class="col-6">
+                    <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2">
+                <label for="inputPassword6" class="col-form-label">Third:</label>
+              </div>
+              <div class="col-10">
+                <div class="row">
+                  <div class="col-6">
+                    <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                  </div>
+                  <div class="col-6">
+                    <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2">
+                <label for="inputPassword6" class="col-form-label">Fourth:</label>
+              </div>
+              <div class="col-10">
+                <div class="row">
+                  <div class="col-6">
+                    <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                  </div>
+                  <div class="col-6">
+                    <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2">
+                <label for="inputPassword6" class="col-form-label">Fifth:</label>
+              </div>
+              <div class="col-10">
+                <div class="row">
+                  <div class="col-6">
+                    <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                  </div>
+                  <div class="col-6">
+                    <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2">
+                <label for="inputPassword6" class="col-form-label">Final:</label>
+              </div>
+              <div class="col-10">
+                <div class="row">
+                  <div class="col-6">
+                    <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                  </div>
+                  <div class="col-6">
+                    <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <h5 class="mt-2">Relative Event Predicted Date</h5>
+              <div class="col-2">
+                <input type="text" value="1" placeholder="1" style="width: 54px;
+                height: 42px;">
+              </div>
+              <div class="col-10">
+                <div class="row">
+                  <div class="col-12">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Days</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2">
+                <label for="inputPassword6" class="col-form-label">From:</label>
+              </div>
+              <div class="col-10">
+                <div class="row">
+                  <div class="col-12">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Task Completion Date</option>
+                    </select>
+                    <button class="btn btn-secondary">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <label for="inputCity" class="form-label">Select Task completetion Event to Assoicate with task
+              type</label>
+            <input type="text" class="form-control">
+            <button class="btn btn-secondary">Add</button>
+            <div class="col-auto">
+              <label for="inputCity" class="form-label">Current Task Completion Event options Associated with task
+                type</label>
+              <input type="text" class="form-control">
+              <button class="btn btn-secondary">Remove</button>
+            </div>
+            <div class="col-auto">
+              <label for="inputCity" class="form-label">Select Non Tce Event To Associate with task type as
+                predicted</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h4 class="mt-2">Predicted Events Associated with task type Completion</h4>
+            <div class="table-responsive">
+              <table class="table mt-4">
+                <thead>
+                  <tr>
+                    <th scope="col">Event Description</th>
+                    <th scope="col">Offset</th>
+                    <th scope="col">Based On</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>Otto</td>
+                  </tr>
+                  <tr>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>Otto</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="row">
+                <div class="col-12">
+                  <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group m-2" role="group" aria-label="First group">
+                      <button type="button" class="btn btn-secondary">Save & Close</button>
+
+                    </div>
+                    <div class="btn-group m-2" role="group" aria-label="Second group">
+                      <button type="button" class="btn btn-secondary">Commit & Set Tce</button>
+
+                    </div>
+                    <div class="btn-group m-2" role="group" aria-label="Third group">
+                      <button type="button" class="btn btn-secondary">Cancel & Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- --------------------------------------------------- -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModaleventstask" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <h5 class="text-center" id="exampleModalLabel">Event Type List</h5>
+    <div class="modal-body">
+      <div class="container">
+        <div class="row align-items-start">
+          <div class="col">
+
+          </div>
+          <div class="col">
+            <div class="input-group">
+              <input type="text" class="form-control" aria-label="Text input with dropdown button">
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false"></button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div role="separator" class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="table-responsive">
+
+        <table class="table ">
+          <thead>
+            <tr>
+              <td><input type="text" style="width: 50px;"></td>
+              <td></td>
+              <td><input type="text" style="width: 50px;"></td>
+              <td></td>
+              <td><input type="text" style="width: 50px;"></td>
+              <td><input type="text" style="width: 50px;"></td>
+              <td><input type="text" style="width: 50px;"></td>
+              <td><input type="text" style="width: 50px;"></td>
+              <td><input type="text" style="width: 50px;"></td>
+            </tr>
+          </thead>
+          <thead>
+            <tr>
+              <th scope="col">ABV.</th>
+              <th scope="col">MT.</th>
+              <th scope="col">Desc.</th>
+              <th scope="col">Country</th>
+              <th scope="col">S.E.</th>
+              <th scope="col">P.F.E</th>
+              <th scope="col">P.R.E</th>
+              <th scope="col">P.A.E</th>
+              <th scope="col">T.C.E</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>Mark</td>
+            </tr>
+            <tr>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>Mark</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary">Estimates</button>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModaladdeventtype" class="btn btn-secondary" >Add Event Type</button>
+        <button type="button" class="btn btn-secondary">Edit Event Type</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModaltasktypelist" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <h5 class="text-center" id="exampleModalLabel">Task Type List</h5>
+    <div class="modal-body">
+
+      <div class="table-responsive">
+        <!-- <div class="container">
+        <div class="row align-items-start">
+          <div class="col-2">
+            <input type="text" class="form-control">
+          </div>
+          <div class="col-2">
+            <input type="text" class="form-control">
+          </div>
+        </div>
+      </div>   -->
+        <table class="table">
+          <thead>
+            <tr>
+              <td><input type="text" style="width: 50px;"></td>
+              <td><input type="text" style="width: 50px;"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </thead>
+          <thead>
+            <tr>
+              <th scope="col">Task ABV.</th>
+              <th scope="col">Task Desc.</th>
+              <th scope="col">R.A.</th>
+              <th scope="col">F.R.D.</th>
+              <th scope="col">S.R.D</th>
+              <th scope="col">T.R.D</th>
+              <th scope="col">FN.R.D</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>Mark</td>
+            </tr>
+            <tr>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>Mark</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary">Edit Task Type</button>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModaladdtasktype"
+          class="btn btn-secondary">Add Task Type</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Remove Task Type</button>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Tiggering Event Types:</h4>
+          <div class="table-responsive">
+            <table class="table mt-4">
+              <thead>
+                <tr>
+                  <th scope="col">ABV</th>
+                  <th scope="col">Desc</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+
+                </tr>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h4>Completion Event Types:</h4>
+          <div class="table-responsive">
+            <table class="table mt-4">
+              <thead>
+                <tr>
+                  <th scope="col">ABV</th>
+                  <th scope="col">Desc</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+
+                </tr>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <h4>Associated Event Types:</h4>
+          <div class="table-responsive">
+            <table class="table mt-4">
+              <thead>
+                <tr>
+                  <th scope="col">ABV</th>
+                  <th scope="col">Desc</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+
+                </tr>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <h4>Associated Charge Types:</h4>
+          <div class="table-responsive">
+            <table class="table mt-4">
+              <thead>
+                <tr>
+                  <th scope="col">Charge Code</th>
+                  <th scope="col">Desc.</th>
+                  <th scope="col">Amount</th>
+                  <th scope="col">Currency</th>
+                  <th scope="col">Disb.</th>
+                  <th scope="col">A.R.</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>Otto</td>
+                  <td>Mark</td>
+                  <td><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked></td>
+                  <td> <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"></td>
+                </tr>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>Otto</td>
+                  <td>Mark</td>
+                  <td><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked></td>
+                  <td> <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- -------------add event type sub popup----------- -->
+<div class="modal fade" id="exampleModaladdeventtype" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-xl">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <h5 class="text-center" id="exampleModalLabel">Add Event Type</h5>
+    <div class="modal-body">
+      <div class="row">
+        <div class="col-md-12">
+          <form method="Post" action="" class="row g-3">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+              <label class="form-check-label" for="flexCheckDefault">Reportable</label>
+            </div>
+            
+            <!-- Checked checkbox -->
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+              <label class="form-check-label" for="flexCheckChecked">Task Completion Event</label>
+            </div>
+            <!-- Checked checkbox -->
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+              <label class="form-check-label" for="flexCheckChecked">Deadline Closing</label>
+            </div>
+        </div>
+        <div class="col-md-12">
+         
+          <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Event Abv:</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" >
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">In Country:</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" >
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Absolute Deadline:</label>
+            <div class="col-sm-4">
+              <select class="form-select" aria-label="Default select example">
+                <option selected></option>
+              </select>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">From:</label>
+            <div class="col-sm-4">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Event Date</option>
+              </select>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Event Desc:</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">Provisional Event</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">Utility Event</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">Prifiling Even</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox"  value="option2">
+            <label class="form-check-label" for="inlineRadio2">Prosecution Event</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox"   value="option2">
+            <label class="form-check-label" for="inlineRadio2">Post Allowance Event</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">Single Event</label>
+          </div>
+        </div>
+        <div class="col-md-12"> 
+           <button class="btn btn-secondary">Save & Close</button>
+           <button class="btn btn-secondary">Cancel & Close</button>  
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- ------------------------------------------------ -->
+<!-- -----------------sub popup modal-------------- -->
+<div class="modal fade" id="exampleModaladdtasktype" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-xl">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <h5 class="text-center" id="exampleModalLabel">Task Type List</h5>
+    <div class="modal-body">
+      <div class="row">
+        <div class="col-md-12">
+          <form method="Post" action="" class="row g-3">
+            <div class="col-auto">
+              <label for="inputEmail3" class="col-form-label">Task Abv:</label>
+            </div>
+            <div class="col-auto">
+              <input type="text" class="form-control" id="inputEmail3">
+            </div>
+            <div class="col-md-12">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Requires Authorization</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Accounting Task</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2">Paralegal Task</label>
+              </div>
+            </div>
+
+            <div class="col-auto">
+              <label for="inputPassword6" class="col-form-label">Deadline Based On</label>
+            </div>
+            <div class="col-auto">
+              <input type="date" class="form-control" placeholder="Event Date" aria-describedby="passwordHelpInline">
+            </div>
+            <div class="col-md-12">
+              <div class="col-auto">
+                <label for="inputPassword6" class="col-form-label">Task Desc.</label>
+              </div>
+              <div class="col-auto">
+                <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+              </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <h5 class="mt-2">EVENT REALTIVE DEADLINE</h5>
+
+            <div class="row">
+              <div class="col-2">
+                <label for="inputPassword6" class="col-form-label">First</label>
+              </div>
+              <div class="col-10">
+                <div class="row">
+                  <div class="col-6">
+                    <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                  </div>
+                  <div class="col-6">
+                    <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2">
+                <label for="inputPassword6" class="col-form-label">Second:</label>
+              </div>
+              <div class="col-10">
+                <div class="row">
+                  <div class="col-6">
+                    <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                  </div>
+                  <div class="col-6">
+                    <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2">
+                <label for="inputPassword6" class="col-form-label">Third:</label>
+              </div>
+              <div class="col-10">
+                <div class="row">
+                  <div class="col-6">
+                    <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                  </div>
+                  <div class="col-6">
+                    <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2">
+                <label for="inputPassword6" class="col-form-label">Fourth:</label>
+              </div>
+              <div class="col-10">
+                <div class="row">
+                  <div class="col-6">
+                    <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                  </div>
+                  <div class="col-6">
+                    <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2">
+                <label for="inputPassword6" class="col-form-label">Fifth:</label>
+              </div>
+              <div class="col-10">
+                <div class="row">
+                  <div class="col-6">
+                    <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                  </div>
+                  <div class="col-6">
+                    <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2">
+                <label for="inputPassword6" class="col-form-label">Final:</label>
+              </div>
+              <div class="col-10">
+                <div class="row">
+                  <div class="col-6">
+                    <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                  </div>
+                  <div class="col-6">
+                    <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <h5 class="mt-2">Relative Event Predicted Date</h5>
+              <div class="col-2">
+                <input type="text" value="1" placeholder="1" style="width: 54px;
+                height: 42px;">
+              </div>
+              <div class="col-10">
+                <div class="row">
+                  <div class="col-12">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Days</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2">
+                <label for="inputPassword6" class="col-form-label">From:</label>
+              </div>
+              <div class="col-10">
+                <div class="row">
+                  <div class="col-12">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Task Completion Date</option>
+                    </select>
+                    <button class="btn btn-secondary">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <label for="inputCity" class="form-label">Select Task completetion Event to Assoicate with task
+              type</label>
+            <input type="text" class="form-control">
+            <button class="btn btn-secondary">Add</button>
+            <div class="col-auto">
+              <label for="inputCity" class="form-label">Current Task Completion Event options Associated with task
+                type</label>
+              <input type="text" class="form-control">
+              <button class="btn btn-secondary">Remove</button>
+            </div>
+            <div class="col-auto">
+              <label for="inputCity" class="form-label">Select Non Tce Event To Associate with task type as
+                predicted</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h4 class="mt-2">Predicted Events Associated with task type Completion</h4>
+            <div class="table-responsive">
+              <table class="table mt-4">
+                <thead>
+                  <tr>
+                    <th scope="col">Event Description</th>
+                    <th scope="col">Offset</th>
+                    <th scope="col">Based On</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>Otto</td>
+                  </tr>
+                  <tr>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>Otto</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="row">
+                <div class="col-12">
+                  <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group m-2" role="group" aria-label="First group">
+                      <button type="button" class="btn btn-secondary">Save & Close</button>
+
+                    </div>
+                    <div class="btn-group m-2" role="group" aria-label="Second group">
+                      <button type="button" class="btn btn-secondary">Commit & Set Tce</button>
+
+                    </div>
+                    <div class="btn-group m-2" role="group" aria-label="Third group">
+                      <button type="button" class="btn btn-secondary">Cancel & Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- --------------------------------------------------- -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModaltasksteptypes" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <h5 class="text-center" id="exampleModalLabel">Step Type List</h5>
+    <div class="modal-body">
+
+      <div class="table-responsive">
+        <table class="table mt-2">
+          <thead>
+            <tr>
+              <td><input type="text" style="width: 80px;"></td>
+              <td><input type="text" style="width: 80px;"></td>
+            </tr>
+          </thead>
+          <thead>
+            <tr>
+              <th scope="col">Step ABV.</th>
+              <th scope="col">Step Desc.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mark</td>
+              <td>Otto</td>
+            </tr>
+            <tr>
+              <td>Mark</td>
+              <td>Otto</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary">Edit Step Type</button>
+        <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+          data-bs-target="#exampleModaladdsteptype" data-bs-dismiss="modal">Add Step Type</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Remove Step Type</button>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Task Types including Step Types:</h4>
+          <div class="table-responsive">
+            <table class="table mt-4">
+              <thead>
+                <tr>
+                  <th scope="col">ABV</th>
+                  <th scope="col">Desc</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+
+                </tr>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h4>Associated Templates</h4>
+          <div class="table-responsive">
+            <table class="table mt-4">
+              <thead>
+                <tr>
+                  <th scope="col">DOC CO</th>
+                  <th scope="col">DOC Desc</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+
+                </tr>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <h4>Associated Charge Types:</h4>
+          <div class="table-responsive">
+            <table class="table mt-4">
+              <thead>
+                <tr>
+                  <th scope="col">Charge Code</th>
+                  <th scope="col">Desc</th>
+                  <th scope="col">Amount</th>
+                  <th scope="col">Currency</th>
+                  <th scope="col">Disb</th>
+                  <th scope="col">A.R.</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                </tr>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Add New Charge Type</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ------------------Sub Popup form Step Type List --------------- -->
+<div class="modal fade" id="exampleModaladdsteptype" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <h5 class="text-center" id="exampleModalLabel">Add Step Type</h5>
+    <div class="modal-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <form method="Post" action="" class="row g-3">
+              <div class="col-auto">
+                <label for="inputEmail3" class="col-form-label">Step Abv:</label>
+              </div>
+              <div class="col-auto">
+                <input type="text" class="form-control" id="inputEmail3">
+              </div>
+              <div class="col-md-12">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                  <label class="form-check-label" for="inlineCheckbox2">Accounting Task</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                  <label class="form-check-label" for="inlineCheckbox2">Paralegal Task</label>
+                </div>
+              </div>
+<!--   
+              <div class="col-auto">
+                <label for="inputPassword6" class="col-form-label">Step Desc:</label>
+              </div>
+              <div class="col-auto">
+                <input type="text" class="form-control" placeholder="Event Date" aria-describedby="passwordHelpInline">
+              </div> -->
+              <div class="row">
+              <div class="col-md-12">
+                <div class="col-auto">
+                  <label for="inputPassword6" class="col-form-label">Step Desc:</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text" class="form-control" aria-describedby="passwordHelpInline">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <h5 class="mt-5">Templates</h5>
+              </div>
+              <div class="col-md-5">
+                <div class="table-responsive">
+                  <table class="table mt-4">
+                    <thead>
+                      <tr>
+                        <th scope="col">Temp Id</th>
+                        <th scope="col">Temp Desc</th>
+                       
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                      </tr>
+                      <tr>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <!-- <button class="btn btn-secondary">Add</button>
+                <button class="btn btn-secondary">Remove</button>
+                <button class="btn btn-secondary">View</button> -->
+                <div class="row">
+                  <div class="col-md-2">
+                  <button class="btn btn-secondary mt-2">Add</button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-2">
+                  <button class="btn btn-secondary mt-2">Remove</button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-2">
+                  <button class="btn btn-secondary mt-2">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+               <div class="col-md-6">
+                   <h5 class="mt-4">Start Step Task Status</h5> 
+                   <select class="form-select" aria-label="Default select example">
+                    <option selected>Work Not Started</option>
+                  </select>
+                  <button class="btn btn-secondary mt-4">Save & Close</button>
+               </div>
+               <div class="col-md-6">
+                <h5 class="mt-4">Complete Step Task Status</h5>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Work Not Started</option>
+                </select>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Requires Attachment
+                  </label>
+                </div> 
+                <button class="btn btn-secondary">Cancel & Close</button>
+              </div> 
+            </div>
+              </form>
+            
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ----------------------------------------------------- -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModaltaskchargetypes" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <h5 class="text-center" id="exampleModalLabel">Charge Types List</h5>
+    <div class="modal-body">
+      <div class="table-responsive">
+        <table class="table mt-4">
+          <thead>
+            <tr>
+              <td><input type="text" style="width: 50px;"></td>
+              <td><input type="text" style="width: 50px;"></td>
+              <td></td>
+              <td></td>
+              <td><input type="text" style="width: 50px;"></td>
+              <td><input type="text" style="width: 50px;"></td>
+            </tr>
+          </thead>
+          <thead>
+            <tr>
+              <th scope="col">Charge Code</th>
+              <th scope="col">Desc.</th>
+              <th scope="col">Amount</th>
+              <th scope="col">Default Currency</th>
+              <th scope="col">Disb.</th>
+              <th scope="col">A.R.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>23432</td>
+              <td>Otto</td>
+              <td>Mark</td>
+              <td>Otto</td>
+            </tr>
+            <tr>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>23432</td>
+              <td>Otto</td>
+              <td>Mark</td>
+              <td>Otto</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" data-bs-toggle="modal"
+        data-bs-target="#exampleModaladdchargetype" class="btn btn-secondary">Add New Charge Type</button>
+        <button type="button" class="btn btn-secondary">Edit Charge Type</button>
+        <button type="button" class="btn btn-secondary">Remove Charge Type</button>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h4>Step Types including Charge Types:</h4>
+          <div class="table-responsive">
+            <table class="table mt-4">
+              <thead>
+                <tr>
+                  <th scope="col">ABV</th>
+                  <th scope="col">Desc</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+
+                </tr>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="col-sm-3">
+            <label for="inputEmail3" class="col-sm-6 col-form-label">Current Vat:</label>
+          </div>
+          <div class="col-sm-3">
+            <input type="text" class="form-control" id="inputEmail3">
+          </div>
+          <div class="col-sm-1">
+            %
+          </div>
+          <div class="col-sm-4">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Change Current Vat</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- -----------Sub popup charge type list------- -->
+
+<div class="modal fade" id="exampleModaladdchargetype" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <h3 class="text-center" id="exampleModalLabel">Add Charge Type</h3>
+    <div class="modal-body">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <form class="row g-3 mt-4">
+              <div class="row mb-3">
+                <div class="col-sm-3">
+                  <label for="inputEmail3">Charge Type Code:</label>
+                </div>
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" >
+                </div>
+              </div> 
+              <div class="row mb-3">
+                <div class="col-sm-3">
+                  <label for="inputEmail3">Desc:</label>
+                </div>
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" >
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-sm-3">
+                  <label for="inputEmail3">Default Amount:</label>
+                </div>
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" >
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-sm-3">
+                  <label for="inputEmail3" >Default Currency:</label>
+                </div>
+                <div class="col-sm-4">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>U.S Dollar(USA)</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-3">
+                 <div class="col-md-6">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Disbursement
+                    </label>
+                  </div>
+                 </div>
+                 <div class="col-md-6">
+                   <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Auto-Released
+                  </label>
+                </div>
+                </div>
+                
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <button class="btn btn-secondary">Save & Close</button>    
+                </div>
+                <div class="col-md-6">
+                  <button class="btn btn-secondary">Cancel & Close</button>
+               </div>
+             </div>
+            </form>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ------------------------------------------------- -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModaltaskworkflowtree" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <h5 class="text-center" id="exampleModalLabel">System Workflow</h5>
+    <div class="modal-body">
+
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Country</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+            </form>
+          </div>
+          <div class="col-6">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Root Event</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+            </form>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-secondary mt-3">Load</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- -------------------------------------- -->
+<!-- ---------------------Sub popup form matters-------------- -->
+<div class="modal fade" id="exampleModalmattersaddnew" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <h3 class="text-center" id="exampleModalLabel">Open New Matters</h3>
+    <div class="modal-body">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <form class="row g-3 mt-4">
+              <div class="row mb-3">
+                <div class="col-sm-3">
+                  <label for="inputEmail3">Client:</label>
+                </div>
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" placeholder="Professional Patent Solutions" >
+                </div>
+                <div class="col-sm-4">
+                  <button class="btn btn-secondary">Select</button>
+                </div>
+              </div> 
+              <div class="row mb-3">
+                <div class="col-sm-3">
+                  <label for="inputEmail3">Matters Type:</label>
+                </div>
+                <div class="col-sm-4">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected></option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-sm-3">
+                  <label for="inputEmail3">Filing Country:</label>
+                </div>
+                <div class="col-sm-4">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected></option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-2">
+                  <label for="inputEmail3">Matter Docket:</label>
+                </div>
+                <div class="col-sm-4">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected></option>
+                  </select>
+                </div>
+                <div class="col-sm-2">
+                  <label for="inputEmail3">Filing Deadline:</label>
+                </div>
+                <div class="col-sm-4">
+                  <input type="date" name="">
+                </div>
+              </div>
+              <div class="row mb-3">
+                 <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Nickname</label>
+                  <input type="text" class="form-control" >
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Title</label>
+                  <input type="text" class="form-control" >
+                </div>  
+                
+              </div>
+              <div class="row mb-3">
+                <div class="col-sm-4">
+                  <label for="inputEmail3">Responsible Specialist:</label>
+                </div>
+                <div class="col-sm-4">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Vladimir Sherman</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-sm-6">
+                  <button class="btn btn-secondary">Open</button>
+                </div>
+                <div class="col-sm-6">
+                  <button class="btn btn-secondary">Close</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- ----------------------------------------- -->
+  <!-- Matters contact page subpopup -->
+<!-- --------------------------------------- -->
+<div class="modal fade" id="exampleModalmattercontactpopup" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <h3 class="text-center" id="exampleModalLabel">Add Contact subpopup page</h3>
+    <div class="modal-body">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <form class="row g-3 mt-4">
+              <div class="col-md-4 mt-5">
+                <label for="inputEmail4" class="form-label">Title</label>
+                <input type="text" class="form-control" >
+              </div>
+              <div class="col-md-4 mt-5">
+                <label for="inputPassword4" class="form-label">First Name</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="col-4 mt-5">
+                <label for="inputAddress" class="form-label">Last Name</label>
+                <input type="text" class="form-control"  placeholder="1234 Main St">
+              </div>
+              <div class="col-md-6">
+                <label for="inputAddress2" class="form-label">Company</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="">
+                <button class="btn btn-secondary">Select</button>
+              </div>
+              <div class="col-md-6 ">
+                <label for="inputCity" class="form-label">Role</label>
+                <input type="text" class="form-control" id="inputCity">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Point of contact
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Additional Point of contact
+                  </label>
+                </div>
+              </div>
+              <div class="col-6">
+                <label for="inputAddress2" class="form-label">Primary Phone:</label>
+                <input type="text" class="form-control" id="inputAddress2" >
+              </div>
+              <div class="col-6">
+                <label for="inputAddress2" class="form-label">Second Phone:</label>
+                <input type="text" class="form-control" id="inputAddress2" >
+              </div>
+              <div class="col-6">
+                <label for="inputAddress2" class="form-label">Fax</label>
+                <input type="text" class="form-control"  >
+              </div>
+              <div class="col-6">
+                <label for="inputAddress2" class="form-label">Email(s):</label>
+                <input type="text" class="form-control" id="inputAddress2" >
+              </div>
+              <div class="col-6">
+                <label for="inputAddress2" class="form-label">Street Address First</label>
+                <input type="text" class="form-control" id="inputAddress2" >
+              </div>
+              <div class="col-6">
+                <label for="inputAddress2" class="form-label">Street Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2">
+              </div>
+              <div class="col-md-6 ">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-6 ">
+                <label for="inputCity" class="form-label">Postel Code</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">State</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-6 ">
+                <label for="inputCity" class="form-label">Country</label>
+                <!-- <input type="text" class="form-control" id="inputCity"> -->
+                <select class="form-select" aria-label="Default select example">
+                  <option selected></option>
+                </select>
+              </div>
+              <div class="col-md-6 checkbox mt-3" style="display: inline-block;">
+                <label class="unselectable">
+                 Contact Memos:</label>
+                <div class="btn-group mr-2" role="group" aria-label="First group">
+                  <button type="button" class="btn btn-secondary">View</button>
+                </div>
+                <div class="btn-group mr-2" role="group" aria-label="First group">
+                  <button type="button" class="btn btn-secondary">Add</button>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="row">
+                   <div class="col-md-6">
+                     <button class="btn btn-secondary">Cancel</button>
+                   </div>
+                   <div class="col-md-6">
+                    <button class="btn btn-secondary">Save</button>
+                  </div> 
+                </div>
+              </div>  
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- -------------------------------------------------------------- -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalofficedetail" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel"></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+
+    <h3 class="modal-title text-center mb-3">Professional Patent Solutions</h3>
+    <div class="modal-body">
+      <div class="tabs">
+        <ul id="tabs-nav">
+          <li><a href="#tab1">Company Details</a></li>
+          <li><a href="#tab2">Matters</a></li>
+          <li><a href="#tab3">Contacts</a></li>
+
+        </ul> <!-- END tabs-nav -->
+        <div id="tabs-content">
+          <div id="tab1" class="tab-content">
+            <form class="row g-3 ">
+              <div class="col-md-4 mt-5">
+                <label for="inputEmail4" class="form-label">Company Name</label>
+                <input type="text" class="form-control" id="inputEmail4">
+              </div>
+              <div class="col-md-4 mt-5">
+                <label for="inputPassword4" class="form-label">ABV</label>
+                <input type="text" class="form-control" id="inputPassword4">
+              </div>
+              <div class="col-4 mt-5">
+                <label for="inputAddress" class="form-label">Street Address </label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+              </div>
+              <div class="col-6">
+                <label for="inputAddress2" class="form-label">Street Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="1234 Main St">
+              </div>
+              <div class="col-md-6 ">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-6 ">
+                <label for="inputCity" class="form-label">Postel Code</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">State</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-6 ">
+                <label for="inputCity" class="form-label">Country</label>
+                <input type="text" class="form-control" id="inputCity">
+                <button class="btn btn-secondary">Edit</button>
+              </div>
+              <div class="col-md-6 ">
+                <label for="inputCity" class="form-label">Main Phone</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-6 ">
+                <label for="inputCity" class="form-label">Main FAX</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-6 ">
+                <label for="inputCity" class="form-label">Main Email</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-6 ">
+                <label for="inputCity" class="form-label">RESP.SPEC:</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">Registration No.</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="form-check col-md-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Small Entity
+                </label>
+              </div>
+              <div class="form-check col-md-3">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  VAT Exempt
+                </label>
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">ACCOUNTING</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">PARALEGAL</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">Belongs To:</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+
+              <div class="col-md-6 checkbox mt-3" style="display: inline-block;">
+                <label class="unselectable">
+                  Company Memos:</label>
+                <div class="btn-group mr-2" role="group" aria-label="First group">
+                  <button type="button" class="btn btn-secondary">View</button>
+                </div>
+                <div class="btn-group mr-2" role="group" aria-label="First group">
+                  <button type="button" class="btn btn-secondary">Add</button>
+                </div>
+              </div>
+
+
+
+            </form>
+            <h3 class="text-center m-5">PRIMARY CONTACT</h3>
+
+            <div class="container">
+
+              <form class="row g-3" action="/action_page.php">
+                <div class="form-group row mt-3">
+                  <label class="control-label col-sm-2" for="email">Title</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" name="title">
+                  </div>
+                  <label class="control-label col-sm-2" for="pwd">Name</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" name="name">
+                  </div>
+                </div>
+                <div class="form-group row mt-3">
+                  <label class="control-label col-sm-2" for="pwd">Role</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" name="role">
+                  </div>
+                  <label class="control-label col-sm-2" for="pwd">Primary Phone</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" name="primary_phone">
+                  </div>
+                </div>
+                <div class="form-group row mt-3">
+                  <label class="control-label col-sm-2" for="pwd">Fax</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" name="fax">
+                  </div>
+                  <label class="control-label col-sm-2" for="pwd">Second Phone</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" name="secondary_phone">
+                  </div>
+                </div>
+                <div class="form-group row mt-3">
+                  <label class="control-label col-sm-2" for="pwd">Email(s)</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" name="fax">
+                  </div>
+                </div>
+
+              </form>
+            </div>
+
+            <div class="col-md-9 checkbox mt-3" style="display: inline-block;">
+
+              <div class="btn-group mr-2" role="group" aria-label="First group">
+                <button type="button" class="btn btn-secondary  mr-2">Remove</button>
+              </div>
+              <div class="btn-group mr-2" role="group" aria-label="First group">
+                <button type="button" class="btn btn-secondary  mr-2">Compose Letter</button>
+              </div>
+              <div class="btn-group mr-2" role="group" aria-label="First group">
+                <button type="button" class="btn btn-secondary  mr-2">Compose Email</button>
+              </div>
+              <div class="btn-group mr-2" role="group" aria-label="First group">
+                <button type="button" class="btn btn-secondary  mr-2">Close</button>
+              </div>
+            </div>
+
+          </div>
+          <div id="tab2" class="tab-content">
+            <div class="row g-3 align-items-center">
+              <div class="col-auto">
+                <label for="inputPassword6" class="col-form-label">Matters Families For:</label>
+              </div>
+              <div class="col-auto">
+                <input type="text"  placeholder="Professional Patent Solutions" class="form-control">
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="table mt-4">
+                <thead>
+                  <tr>
+                    <th scope="col">Root Docket</th>
+                    <th scope="col">Family Name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                  </tr>
+                  <tr>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="row g-3 align-items-center">
+              <div class="col-auto">
+                <label for="inputPassword6" class="col-form-label">Matters In Family</label>
+              </div>
+              <div class="col-auto">
+                <input type="text" placeholder="Professional Patent Solutions"
+                  class="form-control">
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="table mt-4">
+                <thead>
+                  <tr>
+                    <th scope="col">Matters Docket</th>
+                    <th scope="col">Matter title</th>
+                    <th scope="col">App No</th>
+                    <th scope="col">NextDeadLine</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>hacda</td>
+                  </tr>
+                  <tr>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>hacda</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+              <div class="btn-group mr-2" role="group" aria-label="Second group">
+                <button type="button" class="btn btn-secondary">Add New</button>
+              </div>
+            </div>
+          </div>
+          <div id="tab3" class="tab-content">
+            <div class="row g-3 align-items-center">
+              <div class="col-auto">
+                <label for="inputPassword6" class="col-form-label">Contact For</label>
+              </div>
+              <div class="col-auto">
+                <input type="text" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+              </div>
+              <div class="col-auto">
+
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="table mt-4">
+                <thead>
+                  <tr>
+                    <th scope="col">Name:</th>
+                    <th scope="col">Role:</th>
+                    <th scope="col">Phone No:</th>
+                    <th scope="col">Fax No:</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">POC</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>hacda</td>
+                    <td>hacda</td>
+                    <td>hacda</td>
+                  </tr>
+                  <tr>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>hacda</td>
+                    <td>hacda</td>
+                    <td>hacda</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-9 checkbox mt-3" style="display: inline-block;">
+              <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group mr-2" role="group" aria-label="First group">
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModalSearch"
+                    class="btn btn-secondary">Add New</button>
+                </div>
+                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                  <button type="button" class="btn btn-secondary">Edit</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalcreditcharge" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel"></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <h4 class="text-center">Credit Charges</h4>
+    <form class="row g-3 mt-4">
+      <div class="row mb-3">
+        <div class="col-sm-1">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Client: </label>
+        </div>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="inputEmail3">
+        </div>
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-secondary">Select</button>
+        </div>
+
+
+    </form>
+
+    <h4 class="mt-5">Available Payments</h4>
+    <div class="table-responsive">
+      <table class="table mt-2">
+        <thead>
+          <tr>
+            <th scope="col">Payment Date</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Payment Id</th>
+            <th scope="col">Payment Record Id</th>
+            <th scope="col">Unused Balance</th>
+            <th scope="col">Logged By</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+          </tr>
+          <tr>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <form class="form-inline">
+      <div class="col-sm-4">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="">Credit Amount</span>
+          </div>
+          <input type="text" class="form-control">
+          <input type="text" class="form-control">
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="">Sub Total</span>
+          </div>
+          <div class="col-sm-3 mr-2">
+            <input type="text" class="form-control">
+          </div>
+          <div class="col-sm-3 mr-2">
+            <button class="btn btn-primary">Credit</button>
+          </div>
+          <div class="col-sm-4 ">
+            <button class="btn btn-primary">Go to DN</button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <h4 class="mt-5">Credit Charges</h4>
+    <div class="table-responsive">
+      <table class="table mt-2">
+        <thead>
+          <tr>
+            <th scope="col">Docket</th>
+            <th scope="col">Charge Desc</th>
+            <th scope="col">Charge Amount</th>
+            <th scope="col">Credited Amount</th>
+            <th scope="col">Balance</th>
+            <th scope="col">Vat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <td>Mark</td>
+            <td>Mark</td>
+            <td>Mark</td>
+          </tr>
+          <tr>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+            <td>Jacob</td>
+          </tr>
+          <tr>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+            <td>the Bird</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ------------------------------Today 5 jan------------------------------- -->
+     <!-- -------------------------------------------------------------- -->
 </div>
 
 

@@ -45,6 +45,7 @@
  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/jquery-3.3.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js" ></script>
 <!-- <script src="js/bootstrap.min.js"></script> -->
 <script>
     $(function () {
@@ -76,7 +77,31 @@ $('#tabs-nav li').click(function(){
   return false;
 });
 </script>
+<script>
+    $(document).ready( function() {
+       $("#tags").autocomplete({
+           source:function(req,res){
+               $.ajax({
+                url:'/auto',
+                method:'post',
+                dataType:'json',
+                data:{'auto':req.term},
+                success:function(data){ 
+                    var x = new Array();
+                        $.each(data.data,(index,values)=>{
+                             x.push({'value':values.company_name});
+                     });
+                     res(x)
+                 },
+                 error:function(){
+                     alert('server error occured')
+                 }
+               });
+           }
+       });
+});
 
+     </script>
 </body>
 </html>
 
