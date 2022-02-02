@@ -1,0 +1,107 @@
+[{
+  "_id": {
+    "$oid": "61f79eed6065fb010b940472"
+  },
+  "company_name": "dfgsdfg",
+  "abv": "sdfgsd",
+  "street_address_first": "sdfgsdf",
+  "street_address_second": "sdfgsdf",
+  "city": "drerer",
+  "postel_code": "ertert",
+  "state": "state",
+  "country": "country",
+  "main_phone": 5467567546,
+  "main_fax": "fax",
+  "main_email": "sdfasd@gsdfgs.fdgdf",
+  "paralegal": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61f7a0506065fb010b940476"
+  },
+  "company_name": "dfgsdfg",
+  "abv": "sdfgsd",
+  "street_address_first": "sdfgsdf",
+  "street_address_second": "sdfgsdf",
+  "city": "drerer",
+  "postel_code": "ertert",
+  "state": "state",
+  "country": "country",
+  "main_phone": 5467567546,
+  "main_fax": "fax",
+  "main_email": "dieew@dfgsfd.com",
+  "paralegal": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61f7a0bc6065fb010b940478"
+  },
+  "company_name": "test",
+  "abv": "abv",
+  "street_address_first": "address",
+  "street_address_second": "addressss",
+  "city": "city",
+  "postel_code": "postel",
+  "state": "state",
+  "country": "country",
+  "main_phone": 5656565655,
+  "main_fax": "fax",
+  "main_email": "qweasd@asd.asd",
+  "small_entity": "small entity",
+  "vat_Exempt": "vat Exempt",
+  "paralegal": "paralegal",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61f93f7e43b63d04e38043fa"
+  },
+  "company_name": "rahul",
+  "abv": "",
+  "street_address_first": "",
+  "street_address_second": "",
+  "city": "",
+  "postel_code": "",
+  "state": "",
+  "country": "",
+  "main_phone": null,
+  "main_fax": "",
+  "main_email": "",
+  "paralegal": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61f9402d43b63d04e380440b"
+  },
+  "company_name": "rahel",
+  "abv": "",
+  "street_address_first": "",
+  "street_address_second": "",
+  "city": "",
+  "postel_code": "",
+  "state": "",
+  "country": "",
+  "main_phone": null,
+  "main_fax": "",
+  "main_email": "rahee@sdf.dfgsdfg",
+  "paralegal": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa3feff9abd1a0b1c3eb75"
+  },
+  "company_name": "abc",
+  "abv": "abv",
+  "street_address_first": "address",
+  "street_address_second": "address",
+  "city": "city",
+  "postel_code": "postel",
+  "state": "state",
+  "country": "country",
+  "main_phone": 7876786755,
+  "main_fax": "fax",
+  "main_email": "abc@gmail.com",
+  "small_entity": "small entity",
+  "vat_Exempt": "vat Exempt",
+  "paralegal": "paralegal",
+  "__v": 0
+}]

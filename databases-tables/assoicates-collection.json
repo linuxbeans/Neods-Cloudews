@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "61fa3ba3aaad3d9aebfb4778"
+  },
+  "companyname": "vbncvb",
+  "abv_name": "dfgsdfg",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa3e6c3b85533f10febe29"
+  },
+  "companyname": "add",
+  "abv_name": "abv",
+  "street_address_first": "adde",
+  "street_address_second": "sdsrere",
+  "city": "city",
+  "postel_code": "postel",
+  "state": "state",
+  "country": "countr",
+  "main_phone": 45645676767,
+  "main_fax": "6786",
+  "main_email": "asa@gmail.com",
+  "__v": 0
+}]
