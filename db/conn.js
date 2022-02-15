@@ -4,7 +4,6 @@ const url = `mongodb+srv://new-user_31:<pvI6pToIv7vLmS2Z>@cluster0.mongodb.net/n
 
 const connectionParams={
     useNewUrlParser: true,
-    useCreateIndex: true,
     useUnifiedTopology: true 
 }
 mongoose.connect(url,connectionParams)
