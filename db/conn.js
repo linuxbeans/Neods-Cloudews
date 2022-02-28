@@ -1,9 +1,10 @@
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://root:Vmware@192.168.55.24/newmanagement", {
-  server: {
-    socketOptions: {
-      socketTimeoutMS: 0,
-      connectionTimeout: 0
-    }
-  }
+mongoose.connect("mongodb://root:Vmware@192.168.55.24/newmanagement",{
+   
+    useNewUrlParser:true,
+    useUnifiedTopology:true
+}).then(()=>{
+    console.log("connection is successful");
+}).catch((err)=>{
+    console.log(err);
 });
