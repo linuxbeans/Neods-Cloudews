@@ -1,4 +1,4 @@
-mongoose.connect("business-solutions-:27017/newmanagement",{
+mongoose.connect("mongodb://business-solutions/newmanagement",{
    
     useNewUrlParser:true,
     useUnifiedTopology:true
