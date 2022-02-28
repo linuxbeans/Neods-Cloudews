@@ -1,8 +1,11 @@
-const { MongoClient } = require('mongodb');
-const uri = "mongodb+srv://new-user_31:<pvI6pToIv7vLmS2Z>@cluster0.fnjb9.mongodb.net/newmanagement?retryWrites=true&w=majorityssl=true";
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-client.connect(err => {
-const collection = client.db("test").collection("devices");
-// perform actions on the collection object
-client.close();
-});
+const mongoose = require("mongoose");
+
+mongoose.connect("mongodb://192.168.55.24/newmanagement",{
+   
+    useNewUrlParser:true,
+    useUnifiedTopology:true
+}).then(()=>{
+    console.log("connection is successful");
+}).catch((err)=>{
+    console.log(err);
+})
